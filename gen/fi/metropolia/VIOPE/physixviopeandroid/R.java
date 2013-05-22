@@ -28,7 +28,11 @@ public final class R {
         public static final int BtnGoToProjectile=0x7f080028;
         public static final int BtnGoToTrigonometry=0x7f080027;
         public static final int BtnGoToVec=0x7f080026;
-        public static final int action_settings=0x7f080042;
+        public static final int EditText01=0x7f080043;
+        public static final int EditText02=0x7f080044;
+        public static final int EditText03=0x7f080045;
+        public static final int TextView01=0x7f080042;
+        public static final int action_settings=0x7f080046;
         public static final int btnAdd=0x7f080034;
         public static final int btnAngle=0x7f08003a;
         public static final int btnBrick=0x7f080024;
