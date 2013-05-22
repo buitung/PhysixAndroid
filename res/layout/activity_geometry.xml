@@ -63,6 +63,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:onClick="goToCircle"
                 android:text="@string/Circle" />
 
             <Button
@@ -70,6 +71,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:onClick="goToSphere"
                 android:text="@string/Sphere" />
         </LinearLayout>
 
@@ -84,6 +86,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:onClick="goToQuad"
                 android:text="@string/Quad" />
 
             <Button
@@ -91,6 +94,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:onClick="goToBrick"
                 android:text="@string/Brick" />
         </LinearLayout>
     </LinearLayout>

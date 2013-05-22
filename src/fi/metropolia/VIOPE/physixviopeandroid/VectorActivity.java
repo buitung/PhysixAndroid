@@ -1,10 +1,12 @@
 package fi.metropolia.VIOPE.physixviopeandroid;
 
-import android.os.Bundle;
 import android.app.Activity;
+import android.content.Intent;
+import android.os.Bundle;
+import android.support.v4.app.NavUtils;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.support.v4.app.NavUtils;
+import android.view.View;
 
 public class VectorActivity extends Activity {
 
@@ -47,6 +49,46 @@ public class VectorActivity extends Activity {
 			return true;
 		}
 		return super.onOptionsItemSelected(item);
+	}
+
+	public void goToAdd(View view) {
+		Intent intent = new Intent(this, VectorAddActivity.class);
+		startActivity(intent);
+	}
+
+	public void goToSubtract(View view) {
+		Intent intent = new Intent(this, VectorSubtractActivity.class);
+		startActivity(intent);
+	}
+
+	public void goToProduct(View view) {
+		Intent intent = new Intent(this, VectorProductActivity.class);
+		startActivity(intent);
+	}
+
+	public void goToCrossProduct(View view) {
+		Intent intent = new Intent(this, VectorCrossProductActivity.class);
+		startActivity(intent);
+	}
+
+	public void goToDotProduct(View view) {
+		Intent intent = new Intent(this, VectorDotProductActivity.class);
+		startActivity(intent);
+	}
+
+	public void goToAngle(View view) {
+		Intent intent = new Intent(this, VectorAngleActivity.class);
+		startActivity(intent);
+	}
+
+	public void goToDistance(View view) {
+		Intent intent = new Intent(this, VectorDistanceActivity.class);
+		startActivity(intent);
+	}
+
+	public void goToInfo(View view) {
+		Intent intent = new Intent(this, VectorInformationActivity.class);
+		startActivity(intent);
 	}
 
 }

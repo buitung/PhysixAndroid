@@ -1,5 +1,6 @@
 package fi.metropolia.VIOPE.physixviopeandroid;
 
+import fi.metropolia.VIOPE.physixlib.Sphere;
 import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
@@ -50,16 +51,35 @@ public class GeometryActivity extends Activity {
 		}
 		return super.onOptionsItemSelected(item);
 	}
-	
-	public void goToTriangle(View view){
-		Intent intent = new Intent(this,TriangleActivity.class);
+
+	public void goToTriangle(View view) {
+		Intent intent = new Intent(this, TriangleActivity.class);
 		startActivity(intent);
-	}
-	
-	public void goToPyramid(View view){
-		Intent intent = new Intent(this,PyramidActivity.class);
-		startActivity(intent);
-		
 	}
 
+	public void goToPyramid(View view) {
+		Intent intent = new Intent(this, PyramidActivity.class);
+		startActivity(intent);
+
+	}
+
+	public void goToCircle(View view) {
+		Intent intent = new Intent(this, CircleActivity.class);
+		startActivity(intent);
+	}
+
+	public void goToSphere(View view) {
+		Intent intent = new Intent(this, SphereActivity.class);
+		startActivity(intent);
+	}
+
+	public void goToBrick(View view) {
+		Intent intent = new Intent(this, BrickActivity.class);
+		startActivity(intent);
+	}
+
+	public void goToQuad(View view) {
+		Intent intent = new Intent(this, QuadActivity.class);
+		startActivity(intent);
+	}
 }
