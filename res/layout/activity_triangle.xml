@@ -20,7 +20,7 @@
         android:text="@string/Copyright" />
 
     <RelativeLayout
-        android:id="@+id/layoutBrick"
+        android:id="@+id/layoutTriangle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
@@ -30,7 +30,7 @@
         android:layout_marginTop="22dp" >
 
         <TextView
-            android:id="@+id/lbla"
+            android:id="@+id/lblaTriangle"
             android:layout_width="75dp"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
@@ -39,84 +39,85 @@
             android:text="a" />
 
         <TextView
-            android:id="@+id/lblb"
+            android:id="@+id/lblbTriangle"
             android:layout_width="75dp"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
-            android:layout_below="@+id/lbla"
+            android:layout_below="@+id/lblaTriangle"
             android:layout_marginTop="35dp"
             android:text="b" />
 
         <TextView
-            android:id="@+id/lblc"
+            android:id="@+id/lblcTriangle"
             android:layout_width="75dp"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
-            android:layout_below="@+id/lblb"
+            android:layout_below="@+id/lblbTriangle"
             android:layout_marginTop="35dp"
             android:text="c" />
 
         <EditText
-            android:id="@+id/txta"
+            android:id="@+id/txtaTriangle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignBaseline="@+id/lbla"
-            android:layout_alignBottom="@+id/lbla"
+            android:layout_alignBaseline="@+id/lblaTriangle"
+            android:layout_alignBottom="@+id/lblaTriangle"
             android:layout_marginLeft="18dp"
-            android:layout_toRightOf="@+id/lbla"
+            android:layout_toRightOf="@+id/lblaTriangle"
             android:ems="10"
             android:hint="Base side 1" >
         </EditText>
 
         <EditText
-            android:id="@+id/txtb"
+            android:id="@+id/txtbTriangle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignBaseline="@+id/lblb"
-            android:layout_alignBottom="@+id/lblb"
-            android:layout_alignLeft="@+id/txta"
+            android:layout_alignBaseline="@+id/lblbTriangle"
+            android:layout_alignBottom="@+id/lblbTriangle"
+            android:layout_alignLeft="@+id/txtaTriangle"
             android:ems="10"
             android:hint="Base side 2" />
 
         <EditText
-            android:id="@+id/txtc"
+            android:id="@+id/txtcTriangle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignBaseline="@+id/lblc"
-            android:layout_alignBottom="@+id/lblc"
-            android:layout_alignLeft="@+id/txtb"
+            android:layout_alignBaseline="@+id/lblcTriangle"
+            android:layout_alignBottom="@+id/lblcTriangle"
+            android:layout_alignLeft="@+id/txtbTriangle"
             android:ems="10"
             android:hint="Base side 3" />
 
         <Button
-            android:id="@+id/btnCalculate"
+            android:id="@+id/btnCalculateTriangle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
-            android:layout_below="@+id/txtc"
+            android:layout_below="@+id/txtcTriangle"
             android:layout_marginTop="22dp"
+            android:onClick="calculate"
             android:text="@string/Calculate" />
 
         <TextView
-            android:id="@+id/lblArea"
+            android:id="@+id/lblAreaTriangle"
             android:layout_width="75dp"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/btnCalculate"
+            android:layout_below="@+id/btnCalculateTriangle"
             android:layout_marginTop="35dp"
-            android:layout_toLeftOf="@+id/txta"
+            android:layout_toLeftOf="@+id/txtaTriangle"
             android:text="Area" />
 
         <TextView
-            android:id="@+id/lblVolume"
+            android:id="@+id/lblPerimeterTriangle"
             android:layout_width="75dp"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/lblArea"
+            android:layout_below="@+id/lblAreaTriangle"
             android:layout_marginTop="35dp"
-            android:layout_toLeftOf="@+id/txta"
-            android:text="Volume" />
+            android:layout_toLeftOf="@+id/txtaTriangle"
+            android:text="Perimeter" />
 
         <Button
-            android:id="@+id/btnInformation"
+            android:id="@+id/btnInformationTriangle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
@@ -126,21 +127,21 @@
             android:text="@string/Information" />
 
         <TextView
-            android:id="@+id/lblAreaAns"
+            android:id="@+id/lblAreaAnsTriangle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignBottom="@+id/lblArea"
-            android:layout_alignLeft="@+id/txtc"
-            android:layout_alignRight="@+id/txtc"
+            android:layout_alignBottom="@+id/lblAreaTriangle"
+            android:layout_alignLeft="@+id/txtcTriangle"
+            android:layout_alignRight="@+id/txtcTriangle"
             android:text="" />
 
         <TextView
-            android:id="@+id/lblVolumeAns"
+            android:id="@+id/lblPerimeterAnsTriangle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignBottom="@+id/lblVolume"
-            android:layout_alignLeft="@+id/lblAreaAns"
-            android:layout_alignRight="@+id/lblAreaAns"
+            android:layout_alignBottom="@+id/lblVolumeTriangle"
+            android:layout_alignLeft="@+id/lblAreaAnsTriangle"
+            android:layout_alignRight="@+id/lblAreaAnsTriangle"
             android:text="" />
     </RelativeLayout>
 </RelativeLayout>
