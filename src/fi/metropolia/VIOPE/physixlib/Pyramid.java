@@ -18,6 +18,8 @@ public class Pyramid {
      */
     public Pyramid(float baseside1, float baseside2,
             float baseside3, float height) {
+    	if (baseside1 <=0 || baseside2 <=0  || baseside3 <=0 || height <=0 )
+    		throw new IllegalArgumentException("Three base sides and height must be positive");
         this.baseside1 = baseside1;
         this.baseside2 = baseside2;
         this.baseside3 = baseside3;
@@ -30,10 +32,10 @@ public class Pyramid {
      * @return the float value of the total area of the 4 planes.
      */
     public float Area() {
-        float s = (float)0.5*(baseside1+baseside2+baseside3);
+    	float s = t.Perimeter()/2;
         float ir = (float)Math.sqrt((s-baseside1)*(s-baseside2)*(s-baseside3)/s);
         float sh = MathUtils.Pythagore2D(height, ir);
-        return t.Area() + (float)0.5*t.Perimeter()*sh;
+        return t.Area() + s*sh;
     }
     
     /**
