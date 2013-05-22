@@ -28,7 +28,7 @@
         android:textSize="13sp" />
 
     <EditText
-        android:id="@+id/editText1"
+        android:id="@+id/txtInitialVelocity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/textView1"
@@ -43,96 +43,95 @@
     </EditText>
 
     <Button
-        android:id="@+id/button1"
+        android:id="@+id/btnCalculateProjectile"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/editText2"
-        android:layout_alignRight="@+id/editText2"
-        android:layout_below="@+id/editText2"
+        android:layout_alignLeft="@+id/txtAngleProj"
+        android:layout_alignRight="@+id/txtAngleProj"
+        android:layout_below="@+id/txtAngleProj"
         android:layout_marginTop="22dp"
         android:text="Calculate" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/txtAngleProj"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/editText1"
-        android:layout_alignRight="@+id/editText1"
-        android:layout_below="@+id/editText1"
+        android:layout_alignLeft="@+id/txtInitialVelocity"
+        android:layout_alignRight="@+id/txtInitialVelocity"
+        android:layout_below="@+id/txtInitialVelocity"
         android:layout_marginTop="16dp"
         android:ems="10"
         android:hint="Initial angle"
         android:inputType="numberDecimal" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/lblDistanceProj"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/button1"
-        android:layout_below="@+id/button1"
+        android:layout_alignLeft="@+id/btnCalculateProjectile"
+        android:layout_below="@+id/btnCalculateProjectile"
         android:layout_marginTop="27dp"
         android:text="Distance"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/lblHeightProj"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView3"
-        android:layout_below="@+id/textView3"
+        android:layout_alignLeft="@+id/lblDistanceProj"
+        android:layout_below="@+id/lblDistanceProj"
         android:layout_marginTop="22dp"
         android:text="Height"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/lblAirTime"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView4"
-        android:layout_below="@+id/textView4"
+        android:layout_alignLeft="@+id/lblHeightProj"
+        android:layout_below="@+id/lblHeightProj"
         android:layout_marginTop="18dp"
         android:text="Air time"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btnInformationProjectile"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView5"
-        android:layout_alignRight="@+id/button1"
-        android:layout_below="@+id/textView5"
+        android:layout_alignLeft="@+id/lblAirTime"
+        android:layout_alignRight="@+id/btnCalculateProjectile"
+        android:layout_below="@+id/lblAirTime"
         android:layout_marginTop="25dp"
-        android:onClick="onClickDialog"
         android:text="Information" />
 
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/lblDistanceAnsProj"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/textView3"
-        android:layout_alignBottom="@+id/textView3"
-        android:layout_alignRight="@+id/textView7"
+        android:layout_alignBaseline="@+id/lblDistanceProj"
+        android:layout_alignBottom="@+id/lblDistanceProj"
+        android:layout_alignRight="@+id/lblHeightAnsProj"
         android:layout_toRightOf="@+id/textView1"
         android:text="" />
 
     <TextView
-        android:id="@+id/textView7"
+        android:id="@+id/lblHeightAnsProj"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/textView4"
-        android:layout_alignBottom="@+id/textView4"
-        android:layout_alignRight="@+id/button2"
+        android:layout_alignBaseline="@+id/lblHeightProj"
+        android:layout_alignBottom="@+id/lblHeightProj"
+        android:layout_alignRight="@+id/btnInformationProjectile"
         android:layout_toRightOf="@+id/textView1"
         android:text="" />
 
     <TextView
-        android:id="@+id/textView8"
+        android:id="@+id/lblAirTimeAnsProj"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/textView5"
-        android:layout_alignBottom="@+id/textView5"
-        android:layout_alignLeft="@+id/textView7"
-        android:layout_alignRight="@+id/button2"
+        android:layout_alignBaseline="@+id/lblAirTime"
+        android:layout_alignBottom="@+id/lblAirTime"
+        android:layout_alignLeft="@+id/lblHeightAnsProj"
+        android:layout_alignRight="@+id/btnInformationProjectile"
         android:text="" />
 
 </RelativeLayout>

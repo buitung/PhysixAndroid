@@ -28,7 +28,7 @@
         android:textSize="13sp" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/lblVectorVectorAngle1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/textView1"
@@ -38,21 +38,21 @@
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/lblVectorVectorAngle2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView3"
-        android:layout_below="@+id/textView3"
+        android:layout_alignLeft="@+id/lblVectorVectorAngle1"
+        android:layout_below="@+id/lblVectorVectorAngle1"
         android:layout_marginTop="24dp"
         android:text="Vector"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/txtVectorYVectorAngle1"
         android:layout_width="60dp"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/textView4"
-        android:layout_toRightOf="@+id/editText1"
+        android:layout_above="@+id/lblVectorVectorAngle2"
+        android:layout_toRightOf="@+id/txtInitialVelocity"
         android:ems="10"
         android:hint="y"
         android:inputType="numberSigned" />
@@ -61,20 +61,20 @@
         android:id="@+id/editText3"
         android:layout_width="60dp"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/editText2"
-        android:layout_alignBottom="@+id/editText2"
-        android:layout_toRightOf="@+id/editText2"
+        android:layout_alignBaseline="@+id/txtVectorYVectorAngle1"
+        android:layout_alignBottom="@+id/txtVectorYVectorAngle1"
+        android:layout_toRightOf="@+id/txtVectorYVectorAngle1"
         android:ems="10"
         android:hint="z"
         android:inputType="numberSigned" />
 
     <EditText
-        android:id="@+id/editText1"
+        android:id="@+id/txtInitialVelocity"
         android:layout_width="60dp"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/textView4"
+        android:layout_above="@+id/lblVectorVectorAngle2"
         android:layout_marginLeft="15dp"
-        android:layout_toRightOf="@+id/textView3"
+        android:layout_toRightOf="@+id/lblVectorVectorAngle1"
         android:ems="10"
         android:hint="x"
         android:inputType="numberSigned" />
@@ -83,8 +83,8 @@
         android:id="@+id/editText4"
         android:layout_width="60dp"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/textView4"
-        android:layout_alignLeft="@+id/editText1"
+        android:layout_alignBottom="@+id/lblVectorVectorAngle2"
+        android:layout_alignLeft="@+id/txtInitialVelocity"
         android:ems="10"
         android:hint="x"
         android:inputType="numberSigned" >
@@ -113,51 +113,51 @@
         android:inputType="numberSigned" />
 
     <Button
-        android:id="@+id/button1"
+        android:id="@+id/btnCalculateProjectile"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView4"
+        android:layout_alignLeft="@+id/lblVectorVectorAngle2"
         android:layout_alignRight="@+id/textView2"
-        android:layout_below="@+id/textView4"
+        android:layout_below="@+id/lblVectorVectorAngle2"
         android:layout_marginTop="38dp"
         android:text="Calculate" />
 
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/lblDistanceAnsProj"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/button1"
-        android:layout_below="@+id/button1"
+        android:layout_alignLeft="@+id/btnCalculateProjectile"
+        android:layout_below="@+id/btnCalculateProjectile"
         android:layout_marginTop="22dp"
         android:text="Angle bet ween two vectors"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <TextView
-        android:id="@+id/textView7"
+        android:id="@+id/lblHeightAnsProj"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/textView5"
-        android:layout_alignBottom="@+id/textView5"
+        android:layout_alignBaseline="@+id/lblAirTime"
+        android:layout_alignBottom="@+id/lblAirTime"
         android:layout_alignLeft="@+id/editText4"
         android:layout_toLeftOf="@+id/editText5"
         android:text="  " />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btnInformationProjectile"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView5"
-        android:layout_alignRight="@+id/button1"
-        android:layout_below="@+id/textView5"
+        android:layout_alignLeft="@+id/lblAirTime"
+        android:layout_alignRight="@+id/btnCalculateProjectile"
+        android:layout_below="@+id/lblAirTime"
         android:layout_marginTop="30dp"
         android:text="Information" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/lblAirTime"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView6"
-        android:layout_below="@+id/textView6"
+        android:layout_alignLeft="@+id/lblDistanceAnsProj"
+        android:layout_below="@+id/lblDistanceAnsProj"
         android:layout_marginTop="36dp"
         android:text="Angle"
         android:textAppearance="?android:attr/textAppearanceLarge" />
@@ -167,8 +167,8 @@
         style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/textView7"
-        android:layout_alignBottom="@+id/textView7"
+        android:layout_alignBaseline="@+id/lblHeightAnsProj"
+        android:layout_alignBottom="@+id/lblHeightAnsProj"
         android:layout_alignRight="@+id/editText6"
         android:text="Deg/Rad" />
 

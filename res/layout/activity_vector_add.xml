@@ -28,7 +28,7 @@
         android:textSize="13sp" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/lblVectorVectorAdd1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/textView1"
@@ -38,53 +38,53 @@
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/lblVectorVectorAdd2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView3"
-        android:layout_below="@+id/textView3"
+        android:layout_alignLeft="@+id/lblVectorVectorAdd1"
+        android:layout_below="@+id/lblVectorVectorAdd1"
         android:layout_marginTop="24dp"
         android:text="Vector"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/txtVectorYVectorAdd1"
         android:layout_width="60dp"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/textView4"
-        android:layout_toRightOf="@+id/editText1"
+        android:layout_above="@+id/lblVectorVectorAdd2"
+        android:layout_toRightOf="@+id/txtVectorXVectorAdd1"
         android:ems="10"
         android:hint="y"
         android:inputType="numberSigned" />
 
     <EditText
-        android:id="@+id/editText3"
+        android:id="@+id/txtVectorZVectorAdd1"
         android:layout_width="60dp"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/editText2"
-        android:layout_alignBottom="@+id/editText2"
-        android:layout_toRightOf="@+id/editText2"
+        android:layout_alignBaseline="@+id/txtVectorYVectorAdd1"
+        android:layout_alignBottom="@+id/txtVectorYVectorAdd1"
+        android:layout_toRightOf="@+id/txtVectorYVectorAdd1"
         android:ems="10"
         android:hint="z"
         android:inputType="numberSigned" />
 
     <EditText
-        android:id="@+id/editText1"
+        android:id="@+id/txtVectorXVectorAdd1"
         android:layout_width="60dp"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/textView4"
+        android:layout_above="@+id/lblVectorVectorAdd2"
         android:layout_marginLeft="15dp"
-        android:layout_toRightOf="@+id/textView3"
+        android:layout_toRightOf="@+id/lblVectorVectorAdd1"
         android:ems="10"
         android:hint="x"
         android:inputType="numberSigned" />
 
     <EditText
-        android:id="@+id/editText4"
+        android:id="@+id/txtVectorXVectorAdd2"
         android:layout_width="60dp"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/textView4"
-        android:layout_alignLeft="@+id/editText1"
+        android:layout_alignBottom="@+id/lblVectorVectorAdd2"
+        android:layout_alignLeft="@+id/txtVectorXVectorAdd1"
         android:ems="10"
         android:hint="x"
         android:inputType="numberSigned" >
@@ -93,92 +93,92 @@
     </EditText>
 
     <EditText
-        android:id="@+id/editText5"
+        android:id="@+id/txtVectorYVectorAdd2"
         android:layout_width="60dp"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/editText4"
-        android:layout_toRightOf="@+id/editText4"
+        android:layout_alignBottom="@+id/txtVectorXVectorAdd2"
+        android:layout_toRightOf="@+id/txtVectorXVectorAdd2"
         android:ems="10"
         android:hint="y"
         android:inputType="numberSigned" />
 
     <EditText
-        android:id="@+id/editText6"
+        android:id="@+id/txtVectorZVectorAdd2"
         android:layout_width="60dp"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/editText4"
-        android:layout_alignRight="@+id/editText3"
+        android:layout_alignBottom="@+id/txtVectorXVectorAdd2"
+        android:layout_alignRight="@+id/txtVectorZVectorAdd1"
         android:ems="10"
         android:hint="z"
         android:inputType="numberSigned" />
 
     <Button
-        android:id="@+id/button1"
+        android:id="@+id/btnCalculateVectorAdd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView4"
+        android:layout_alignLeft="@+id/lblVectorVectorAdd2"
         android:layout_alignRight="@+id/textView2"
-        android:layout_below="@+id/textView4"
+        android:layout_below="@+id/lblVectorVectorAdd2"
         android:layout_marginTop="38dp"
         android:text="Calculate" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/lblVectorSumVectorAdd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/button1"
+        android:layout_below="@+id/btnCalculateVectorAdd"
         android:layout_marginTop="84dp"
-        android:layout_toLeftOf="@+id/editText1"
+        android:layout_toLeftOf="@+id/txtVectorXVectorAdd1"
         android:text="Vector"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/lblDistanceAnsProj"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/button1"
-        android:layout_below="@+id/button1"
+        android:layout_alignLeft="@+id/btnCalculateVectorAdd"
+        android:layout_below="@+id/btnCalculateVectorAdd"
         android:layout_marginTop="22dp"
         android:text="Vector Sum"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <TextView
-        android:id="@+id/textView7"
+        android:id="@+id/lblVectorSumXVectorAdd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/textView5"
-        android:layout_alignBottom="@+id/textView5"
-        android:layout_alignLeft="@+id/editText4"
-        android:layout_toLeftOf="@+id/editText5"
+        android:layout_alignBaseline="@+id/lblVectorSumVectorAdd"
+        android:layout_alignBottom="@+id/lblVectorSumVectorAdd"
+        android:layout_alignLeft="@+id/txtVectorXVectorAdd2"
+        android:layout_toLeftOf="@+id/txtVectorYVectorAdd2"
         android:text="  " />
 
     <TextView
-        android:id="@+id/textView8"
+        android:id="@+id/lblVectorSumYVectorAdd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/textView7"
-        android:layout_alignBottom="@+id/textView7"
-        android:layout_alignLeft="@+id/editText5"
-        android:layout_alignRight="@+id/editText5"
+        android:layout_alignBaseline="@+id/lblVectorSumXVectorAdd"
+        android:layout_alignBottom="@+id/lblVectorSumXVectorAdd"
+        android:layout_alignLeft="@+id/txtVectorYVectorAdd2"
+        android:layout_alignRight="@+id/txtVectorYVectorAdd2"
         android:text="  " />
 
     <TextView
-        android:id="@+id/textView9"
+        android:id="@+id/lblVectorSumZVectorAdd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/textView8"
-        android:layout_alignBottom="@+id/textView8"
-        android:layout_alignLeft="@+id/editText6"
-        android:layout_alignRight="@+id/editText6"
+        android:layout_alignBaseline="@+id/lblVectorSumYVectorAdd"
+        android:layout_alignBottom="@+id/lblVectorSumYVectorAdd"
+        android:layout_alignLeft="@+id/txtVectorZVectorAdd2"
+        android:layout_alignRight="@+id/txtVectorZVectorAdd2"
         android:text=" " />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btnInfoVectorAdd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView5"
-        android:layout_alignRight="@+id/button1"
-        android:layout_below="@+id/textView5"
+        android:layout_alignLeft="@+id/lblVectorSumVectorAdd"
+        android:layout_alignRight="@+id/btnCalculateVectorAdd"
+        android:layout_below="@+id/lblVectorSumVectorAdd"
         android:layout_marginTop="30dp"
         android:text="Information" />
 

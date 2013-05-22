@@ -28,7 +28,7 @@
         android:textSize="13sp" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/btnConvertSideCalculation"
         style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -37,73 +37,72 @@
         android:text="Deg/Rad" />
 
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/lblDistanceAnsProj"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/button1"
-        android:layout_below="@+id/button1"
+        android:layout_alignLeft="@+id/btnCalculateSideCalculation"
+        android:layout_below="@+id/btnCalculateSideCalculation"
         android:layout_marginTop="36dp"
         android:text="Adjacent"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <TextView
-        android:id="@+id/textView8"
+        android:id="@+id/lblAirTimeAnsProj"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView6"
-        android:layout_below="@+id/textView6"
+        android:layout_alignLeft="@+id/lblDistanceAnsProj"
+        android:layout_below="@+id/lblDistanceAnsProj"
         android:layout_marginTop="32dp"
         android:text="Opposite"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <TextView
-        android:id="@+id/textView10"
+        android:id="@+id/lblOppositeSideCalculation"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/textView8"
-        android:layout_alignBottom="@+id/textView8"
-        android:layout_alignLeft="@+id/textView9"
-        android:layout_alignRight="@+id/button2"
+        android:layout_alignBaseline="@+id/lblAirTimeAnsProj"
+        android:layout_alignBottom="@+id/lblAirTimeAnsProj"
+        android:layout_alignLeft="@+id/lblAdjacentSideCalculation"
+        android:layout_alignRight="@+id/btnInfoSideCalculation"
         android:text="" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btnInfoSideCalculation"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView8"
-        android:layout_alignRight="@+id/button1"
-        android:layout_below="@+id/textView8"
+        android:layout_alignLeft="@+id/lblAirTimeAnsProj"
+        android:layout_alignRight="@+id/btnCalculateSideCalculation"
+        android:layout_below="@+id/lblAirTimeAnsProj"
         android:layout_marginTop="33dp"
         android:text="Information" />
 
     <TextView
-        android:id="@+id/textView9"
+        android:id="@+id/lblAdjacentSideCalculation"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/textView6"
+        android:layout_alignBottom="@+id/lblDistanceAnsProj"
         android:layout_alignLeft="@+id/textView2"
-        android:layout_alignRight="@+id/button3"
+        android:layout_alignRight="@+id/btnConvertSideCalculation"
         android:text="" />
 
     <EditText
-        android:id="@+id/editText1"
-        android:layout_width="100dp"
+        android:id="@+id/txtAngleSideCalculation"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/button3"
-        android:layout_alignBottom="@+id/button3"
+        android:layout_alignBaseline="@+id/btnConvertSideCalculation"
+        android:layout_alignBottom="@+id/btnConvertSideCalculation"
         android:layout_alignLeft="@+id/textView1"
-        android:layout_alignRight="@+id/textView9"
         android:ems="10"
         android:hint="Angle in deg/rad"
         android:inputType="numberDecimal" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/txtHypotenuseSideCalculation"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/editText1"
-        android:layout_alignRight="@+id/button3"
-        android:layout_below="@+id/button3"
+        android:layout_alignLeft="@+id/txtAngleSideCalculation"
+        android:layout_alignRight="@+id/btnConvertSideCalculation"
+        android:layout_below="@+id/btnConvertSideCalculation"
         android:layout_marginTop="19dp"
         android:ems="10"
         android:hint="Hypotenuse length"
@@ -113,13 +112,13 @@
     </EditText>
 
     <Button
-        android:id="@+id/button1"
+        android:id="@+id/btnCalculateSideCalculation"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/editText2"
-        android:layout_alignRight="@+id/editText2"
-        android:layout_below="@+id/editText2"
+        android:layout_alignLeft="@+id/txtHypotenuseSideCalculation"
+        android:layout_alignRight="@+id/txtHypotenuseSideCalculation"
+        android:layout_below="@+id/txtHypotenuseSideCalculation"
         android:layout_marginTop="22dp"
-        android:text="Button" />
+        android:text="Calculate" />
 
 </RelativeLayout>
