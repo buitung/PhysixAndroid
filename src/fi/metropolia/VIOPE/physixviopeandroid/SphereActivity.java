@@ -5,6 +5,7 @@ import fi.metropolia.VIOPE.exception.ParsingException;
 import fi.metropolia.VIOPE.physixlib.Sphere;
 import android.os.Bundle;
 import android.app.Activity;
+import android.app.Dialog;
 import android.content.Context;
 import android.view.Menu;
 import android.view.View;
@@ -34,7 +35,8 @@ public class SphereActivity extends Activity {
 				EditText editText = (EditText) findViewById(R.id.txtRadiusSphere);
 				r = Float.parseFloat(editText.getText().toString());
 			} catch (Exception e) {
-				throw new ParsingException("Please give input in the right form.");
+				throw new ParsingException(
+						"Please give input in the right form.");
 			}
 			Sphere sphere = new Sphere(r);
 			TextView txtView = (TextView) findViewById(R.id.lblAreaAnsSphere);
@@ -65,4 +67,18 @@ public class SphereActivity extends Activity {
 
 		}
 	}
+
+	public void onClickDialog(View view) {
+		Dialog dialog = new Dialog(this);
+		dialog.setContentView(R.layout.dialog);
+		dialog.setTitle("Circle Information");
+		TextView text = (TextView) dialog.findViewById(R.id.textContent);
+		text.setText("A sphere is a perfectly round geometrical"
+				+ " and circular object in three-dimensional space."
+				+ "\nA sphere of radius r . "
+				+ "\nThe surface area of the sphere " + "\n\ta = 4*pi*r^2."
+				+ "\nThe volume of the sphere " + "\n\tv = 4*pi*r^3 /3.");
+		dialog.show();
+	}
+
 }

@@ -5,6 +5,7 @@ import fi.metropolia.VIOPE.exception.ParsingException;
 import fi.metropolia.VIOPE.physixlib.Pyramid;
 import android.os.Bundle;
 import android.app.Activity;
+import android.app.Dialog;
 import android.content.Context;
 import android.view.Menu;
 import android.view.View;
@@ -28,7 +29,7 @@ public class PyramidActivity extends Activity {
 	}
 
 	public void calculate(View view) throws NegativeException, ParsingException {
-		float a = 0, b = 0, c = 0,h =0;
+		float a = 0, b = 0, c = 0, h = 0;
 		try {
 			try {
 				EditText editText = (EditText) findViewById(R.id.txtaPyramid);
@@ -43,7 +44,7 @@ public class PyramidActivity extends Activity {
 				throw new ParsingException(
 						"Please enter inputs in the right form");
 			}
-			Pyramid pyramid= new Pyramid(a, b, c,h);
+			Pyramid pyramid = new Pyramid(a, b, c, h);
 			TextView txtView = (TextView) findViewById(R.id.lblAreaAnsPyramid);
 			txtView.setText(Float.toString(pyramid.Area()));
 			txtView = (TextView) findViewById(R.id.lblVolumeAnsPyramid);
@@ -82,6 +83,29 @@ public class PyramidActivity extends Activity {
 			txtView.setText("");
 
 		}
+	}
+
+	public void onClickDialog(View view) {
+		Dialog dialog = new Dialog(this);
+		dialog.setContentView(R.layout.dialog);
+		dialog.setTitle("Circle Information");
+		TextView text = (TextView) dialog.findViewById(R.id.textContent);
+		text.setText("Pyramid is a structure whose shape is roughly "
+				+ "that of a pyramid in the geometric sense. "
+				+ "Its outer surfaces are triangular and converge "
+				+ "to a single point at the top. The base of the pyramid "
+				+ "described here is trilateral."
+				+ "A pyramid of three base sides: a, b and c, and the "
+				+ "height of the pyramid h. " + "\nLet s the half perimeter "
+				+ "\n\ts = (a+b+c)/2." + "\nInradius of base is ir:"
+				+ "\n\tir = SqrRoot( (s-a)*(s-b)*(s-c)/s )"
+				+ "\nThe length of the side heigth is"
+				+ "\n\tsh = SqrRoot(h^2 + ir^2) "
+				+ "\nThe surface area of the pyramid is"
+				+ "\n\tSurArea = baseArea + sidePerimeter*sh*0,5 "
+				+ "\nThe  volume of the pyramid is"
+				+ "\n\tv =  baseArea * h / 3");
+		dialog.show();
 	}
 
 }

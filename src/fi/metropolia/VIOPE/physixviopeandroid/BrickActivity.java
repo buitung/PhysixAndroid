@@ -5,6 +5,7 @@ import fi.metropolia.VIOPE.exception.ParsingException;
 import fi.metropolia.VIOPE.physixlib.Brick;
 import android.os.Bundle;
 import android.app.Activity;
+import android.app.Dialog;
 import android.content.Context;
 import android.view.Menu;
 import android.view.View;
@@ -68,6 +69,20 @@ public class BrickActivity extends Activity {
 			txtView = (TextView) findViewById(R.id.lblVolumeAnsBrick);
 			txtView.setText("");
 		}
+	}
+
+	public void onClickDialog(View view) {
+		Dialog dialog = new Dialog(this);
+		dialog.setContentView(R.layout.dialog);
+		dialog.setTitle("Circle Information");
+		TextView text = (TextView) dialog.findViewById(R.id.textContent);
+		text.setText("A brick is a cubic object in geometry. "
+				+ "It has twelve edges, eight corners and six faces. "
+				+ "\nA brick has width w, height h and length l.  "
+				+ "\nThe surface area of the brick is:  "
+				+ "\n\ta = 2*w*h + 2*w*l + 2*h*l "
+				+ "\nThe  volume of the brick is: " + "\n\tv = w*h*l.");
+		dialog.show();
 	}
 
 }

@@ -123,6 +123,7 @@
             android:layout_alignParentLeft="true"
             android:layout_alignParentRight="true"
             android:layout_marginBottom="16dp"
+            android:onClick="onClickDialog"
             android:text="@string/Information" />
 
         <TextView
@@ -142,4 +143,4 @@
             android:layout_alignParentRight="true" />
     </RelativeLayout>
 
-</RelativeLayout>
+</RelativeLayout>

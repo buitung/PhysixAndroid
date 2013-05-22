@@ -4,6 +4,7 @@ import fi.metropolia.VIOPE.exception.NegativeException;
 import fi.metropolia.VIOPE.exception.ParsingException;
 import fi.metropolia.VIOPE.physixlib.Circle;
 import android.app.Activity;
+import android.app.Dialog;
 import android.content.Context;
 import android.os.Bundle;
 import android.view.Menu;
@@ -34,9 +35,10 @@ public class CircleActivity extends Activity {
 				EditText editText = (EditText) findViewById(R.id.txtRadiusCircle);
 				r = Float.parseFloat(editText.getText().toString());
 			} catch (Exception e) {
-				throw new ParsingException("Please give input in the right form.");
+				throw new ParsingException(
+						"Please give input in the right form.");
 			}
-			Circle circle= new Circle(r);
+			Circle circle = new Circle(r);
 			TextView txtView = (TextView) findViewById(R.id.lblAreaAnsCircle);
 			txtView.setText(Float.toString(circle.Area()));
 			txtView = (TextView) findViewById(R.id.lblCircumferenceAnsCircle);
@@ -66,4 +68,16 @@ public class CircleActivity extends Activity {
 		}
 	}
 
+	public void onClickDialog(View view) {
+		Dialog dialog = new Dialog(this);
+		dialog.setContentView(R.layout.dialog);
+		dialog.setTitle("Circle Information");
+		TextView text = (TextView) dialog.findViewById(R.id.textContent);
+		text.setText("A circle is a set of points in a plane that are a given distance from a given point, the center. "
+				+ "The distance between any of the points and the center is called the radius."
+				+ "A circle of radius r:\n"
+				+ "The circumference of the circle:\n\t c = 2*pi*r."
+				+ "\nThe area of the circle:\n\t a = pi*r^2.");
+		dialog.show();
+	}
 }

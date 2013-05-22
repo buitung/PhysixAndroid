@@ -5,6 +5,7 @@ import fi.metropolia.VIOPE.exception.ParsingException;
 import fi.metropolia.VIOPE.physixlib.Quad;
 import android.os.Bundle;
 import android.app.Activity;
+import android.app.Dialog;
 import android.content.Context;
 import android.view.Menu;
 import android.view.View;
@@ -67,6 +68,23 @@ public class QuadActivity extends Activity {
 			txtView.setText("");
 
 		}
+	}
+
+	public void onClickDialog(View view) {
+		Dialog dialog = new Dialog(this);
+		dialog.setContentView(R.layout.dialog);
+		dialog.setTitle("Circle Information");
+		TextView text = (TextView) dialog.findViewById(R.id.textContent);
+		text.setText("A quad is one of the basic shapes in geometry. "
+				+ "It is a polygon with four corners or vertices "
+				+ "and four sides or edges which are line segments. "
+				+ "The two opposite sides are equal. The adjacent "
+				+ "two sides form a 90 degree angle."
+				+ "\nA quad of width w and height h. "
+				+ "If w = h the quad is a square, otherwise it is a rectangular"
+				+ "\nThe area of the quad " + "\n\ta = w*h "
+				+ "\nThe perimeter of the quad " + "\n\tp = 2*w+2*h");
+		dialog.show();
 	}
 
 }

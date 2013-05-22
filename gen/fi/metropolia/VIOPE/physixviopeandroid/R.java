@@ -31,7 +31,7 @@ public final class R {
         public static final int BtnGoToTrigonometry=0x7f08002b;
         public static final int BtnGoToVec=0x7f08002a;
         public static final int TextView01=0x7f08006f;
-        public static final int action_settings=0x7f080070;
+        public static final int action_settings=0x7f080072;
         public static final int btnAdd=0x7f080063;
         public static final int btnAngle=0x7f080069;
         public static final int btnBrick=0x7f080028;
@@ -111,6 +111,8 @@ public final class R {
         public static final int lblcPyramid=0x7f080033;
         public static final int lblcTriangle=0x7f080057;
         public static final int lblhPyramid=0x7f080034;
+        public static final int scrollView1=0x7f080070;
+        public static final int textContent=0x7f080071;
         public static final int textView1=0x7f080000;
         public static final int textView10=0x7f080008;
         public static final int textView11=0x7f080006;
@@ -160,6 +162,7 @@ public final class R {
         public static final int activity_vector_information=0x7f030012;
         public static final int activity_vector_product=0x7f030013;
         public static final int activity_vector_subtract=0x7f030014;
+        public static final int dialog=0x7f030015;
     }
     public static final class menu {
         public static final int angle_cal=0x7f070000;

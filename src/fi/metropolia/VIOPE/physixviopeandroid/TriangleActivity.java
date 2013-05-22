@@ -5,6 +5,7 @@ import fi.metropolia.VIOPE.exception.ParsingException;
 import fi.metropolia.VIOPE.physixlib.Triangle;
 import android.os.Bundle;
 import android.app.Activity;
+import android.app.Dialog;
 import android.content.Context;
 import android.view.Menu;
 import android.view.View;
@@ -81,4 +82,20 @@ public class TriangleActivity extends Activity {
 
 		}
 	}
+
+	public void onClickDialog(View view) {
+		Dialog dialog = new Dialog(this);
+		dialog.setContentView(R.layout.dialog);
+		dialog.setTitle("Circle Information");
+		TextView text = (TextView) dialog.findViewById(R.id.textContent);
+		text.setText("A triangle is one of the basic shapes in geometry. "
+				+ "It is a polygon with three corners or vertices and "
+				+ "three sides or edges which are line segments."
+				+ "\nA triangle of  three sides : a, b and c. "
+				+ "\nThe perimeter of the triangle" + "\n\tp = a+b+c"
+				+ "\nThe area of the triangle "
+				+ "\n\ta = SqrRoot( p*(p-a)*(p-b)*(p-c) )");
+		dialog.show();
+	}
+
 }
