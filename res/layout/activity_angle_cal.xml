@@ -53,8 +53,9 @@
         android:layout_height="wrap_content"
         android:layout_alignBaseline="@+id/textView3"
         android:layout_alignBottom="@+id/textView3"
-        android:layout_toLeftOf="@+id/textView2"
-        android:text="TextView" />
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignRight="@+id/textView11"
+        android:text="" />
 
     <TextView
         android:id="@+id/textView9"
@@ -63,7 +64,8 @@
         android:layout_alignBaseline="@+id/textView4"
         android:layout_alignBottom="@+id/textView4"
         android:layout_alignLeft="@+id/textView8"
-        android:text="TextView" />
+        android:layout_alignRight="@+id/textView8"
+        android:text="" />
 
     <TextView
         android:id="@+id/textView10"
@@ -72,7 +74,8 @@
         android:layout_alignBaseline="@+id/textView6"
         android:layout_alignBottom="@+id/textView6"
         android:layout_alignLeft="@+id/textView9"
-        android:text="TextView" />
+        android:layout_alignRight="@+id/button2"
+        android:text="" />
 
     <TextView
         android:id="@+id/textView3"

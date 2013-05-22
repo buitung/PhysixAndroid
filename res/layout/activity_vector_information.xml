@@ -83,38 +83,6 @@
         android:text="Vector"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
-    <EditText
-        android:id="@+id/EditText01"
-        android:layout_width="60dp"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/TextView01"
-        android:layout_alignLeft="@+id/editText1"
-        android:ems="10"
-        android:hint="x"
-        android:inputType="numberSigned" />
-
-    <EditText
-        android:id="@+id/EditText02"
-        android:layout_width="60dp"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/EditText01"
-        android:layout_alignBottom="@+id/EditText01"
-        android:layout_toLeftOf="@+id/editText3"
-        android:ems="10"
-        android:hint="y"
-        android:inputType="numberSigned" />
-
-    <EditText
-        android:id="@+id/EditText03"
-        android:layout_width="60dp"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/EditText02"
-        android:layout_alignBottom="@+id/EditText02"
-        android:layout_alignLeft="@+id/editText3"
-        android:ems="10"
-        android:hint="z"
-        android:inputType="numberSigned" />
-
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
@@ -152,7 +120,8 @@
         android:layout_alignBaseline="@+id/textView5"
         android:layout_alignBottom="@+id/textView5"
         android:layout_alignLeft="@+id/textView2"
-        android:text="TextView" />
+        android:layout_alignRight="@+id/button2"
+        android:text="  " />
 
     <Button
         android:id="@+id/button2"
@@ -163,5 +132,34 @@
         android:layout_alignRight="@+id/button1"
         android:layout_marginBottom="32dp"
         android:text="Information" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView5"
+        android:layout_alignLeft="@+id/editText1"
+        android:layout_toLeftOf="@+id/editText2"
+        android:text="  " />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView7"
+        android:layout_alignBottom="@+id/textView7"
+        android:layout_alignLeft="@+id/editText2"
+        android:layout_toLeftOf="@+id/editText3"
+        android:text="  " />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView8"
+        android:layout_alignBottom="@+id/textView8"
+        android:layout_alignLeft="@+id/editText3"
+        android:layout_alignRight="@+id/editText3"
+        android:text="  " />
 
 </RelativeLayout>

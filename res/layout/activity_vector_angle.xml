@@ -139,7 +139,8 @@
         android:layout_alignBaseline="@+id/textView5"
         android:layout_alignBottom="@+id/textView5"
         android:layout_alignLeft="@+id/editText4"
-        android:text="TextView" />
+        android:layout_toLeftOf="@+id/editText5"
+        android:text="  " />
 
     <Button
         android:id="@+id/button2"
