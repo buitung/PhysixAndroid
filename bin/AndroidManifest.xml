@@ -22,6 +22,38 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="fi.metropolia.VIOPE.physixviopeandroid.GeometryActivity"
+            android:label="@string/title_activity_geometry"
+            android:parentActivityName="fi.metropolia.VIOPE.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="fi.metropolia.VIOPE.MainActivity" />
+        </activity>
+        <activity
+            android:name="fi.metropolia.VIOPE.physixviopeandroid.VectorActivity"
+            android:label="@string/title_activity_vector"
+            android:parentActivityName="fi.metropolia.VIOPE.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="fi.metropolia.VIOPE.MainActivity" />
+        </activity>
+        <activity
+            android:name="fi.metropolia.VIOPE.physixviopeandroid.TrigonometryActivity"
+            android:label="@string/title_activity_trigonometry"
+            android:parentActivityName="fi.metropolia.VIOPE.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="fi.metropolia.VIOPE.MainActivity" />
+        </activity>
+        <activity
+            android:name="fi.metropolia.VIOPE.physixviopeandroid.ProjectileActivity"
+            android:label="@string/title_activity_projectile"
+            android:parentActivityName="fi.metropolia.VIOPE.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="fi.metropolia.VIOPE.MainActivity" />
+        </activity>
     </application>
 
 </manifest>

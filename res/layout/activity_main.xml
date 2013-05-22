@@ -34,6 +34,7 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
+            android:onClick="goToGeoPage"
             android:text="@string/Geometry" />
 
         <Button
@@ -41,6 +42,7 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
+            android:onClick="goToVecPage"
             android:text="@string/Vector" />
 
         <Button
@@ -48,6 +50,7 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
+            android:onClick="goToTrigonometryPage"
             android:text="@string/Trigonometry" />
 
         <Button
@@ -55,6 +58,7 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
+            android:onClick="goToProjectilePage"
             android:text="@string/Projectile" />
     </LinearLayout>
 
