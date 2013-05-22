@@ -124,22 +124,23 @@ public final class R {
         public static final int circle=0x7f070002;
         public static final int geometry=0x7f070003;
         public static final int main=0x7f070004;
-        public static final int projectile=0x7f070005;
-        public static final int pyramid=0x7f070006;
-        public static final int quad=0x7f070007;
-        public static final int side_cal=0x7f070008;
-        public static final int sphere=0x7f070009;
-        public static final int triangle=0x7f07000a;
-        public static final int trigonometry=0x7f07000b;
-        public static final int vector=0x7f07000c;
-        public static final int vector_add=0x7f07000d;
-        public static final int vector_angle=0x7f07000e;
-        public static final int vector_cross_product=0x7f07000f;
-        public static final int vector_distance=0x7f070010;
-        public static final int vector_dot_product=0x7f070011;
-        public static final int vector_information=0x7f070012;
-        public static final int vector_product=0x7f070013;
-        public static final int vector_subtract=0x7f070014;
+        public static final int proj=0x7f070005;
+        public static final int projectile=0x7f070006;
+        public static final int pyramid=0x7f070007;
+        public static final int quad=0x7f070008;
+        public static final int side_cal=0x7f070009;
+        public static final int sphere=0x7f07000a;
+        public static final int triangle=0x7f07000b;
+        public static final int trigonometry=0x7f07000c;
+        public static final int vector=0x7f07000d;
+        public static final int vector_add=0x7f07000e;
+        public static final int vector_angle=0x7f07000f;
+        public static final int vector_cross_product=0x7f070010;
+        public static final int vector_distance=0x7f070011;
+        public static final int vector_dot_product=0x7f070012;
+        public static final int vector_information=0x7f070013;
+        public static final int vector_product=0x7f070014;
+        public static final int vector_subtract=0x7f070015;
     }
     public static final class string {
         public static final int Add=0x7f050013;
@@ -170,6 +171,7 @@ public final class R {
         public static final int title_activity_brick=0x7f050028;
         public static final int title_activity_circle=0x7f050029;
         public static final int title_activity_geometry=0x7f050009;
+        public static final int title_activity_proj=0x7f05002c;
         public static final int title_activity_projectile=0x7f050012;
         public static final int title_activity_pyramid=0x7f050027;
         public static final int title_activity_quad=0x7f050026;

@@ -34,7 +34,7 @@ public class MainActivity extends Activity {
 		startActivity(intent);
 	}
 	public void goToProjectilePage(View view){
-		Intent intent = new Intent(this,GeometryActivity.class);
+		Intent intent = new Intent(this,ProjActivity.class);
 		startActivity(intent);
 	}
 }

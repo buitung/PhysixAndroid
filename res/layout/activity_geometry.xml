@@ -37,16 +37,18 @@
 
             <Button
                 android:id="@+id/btnTriangle"
-                android:layout_weight="1"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="goToTriangle"
                 android:text="@string/Triangle" />
 
             <Button
                 android:id="@+id/btnPyramid"
-                android:layout_weight="1"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="goToPyramid"
                 android:text="@string/Pyramid" />
         </LinearLayout>
 
@@ -58,16 +60,16 @@
 
             <Button
                 android:id="@+id/btnCircle"
-                android:layout_weight="1"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
+                android:layout_weight="1"
                 android:text="@string/Circle" />
 
             <Button
                 android:id="@+id/btnSphere"
-                android:layout_weight="1"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
+                android:layout_weight="1"
                 android:text="@string/Sphere" />
         </LinearLayout>
 
@@ -79,19 +81,18 @@
 
             <Button
                 android:id="@+id/btnQuad"
-                android:layout_weight="1"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
+                android:layout_weight="1"
                 android:text="@string/Quad" />
 
             <Button
                 android:id="@+id/btnBrick"
-                android:layout_weight="1"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
+                android:layout_weight="1"
                 android:text="@string/Brick" />
         </LinearLayout>
-
     </LinearLayout>
 
 </RelativeLayout>

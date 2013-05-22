@@ -118,6 +118,10 @@
             android:name="fi.metropolia.VIOPE.physixviopeandroid.SphereActivity"
             android:label="@string/title_activity_sphere" >
         </activity>
+        <activity
+            android:name="fi.metropolia.VIOPE.physixviopeandroid.ProjActivity"
+            android:label="@string/title_activity_proj" >
+        </activity>
     </application>
 
 </manifest>
