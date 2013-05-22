@@ -44,5 +44,5 @@
     <string name="title_activity_brick">BrickActivity</string>
     <string name="title_activity_circle">CircleActivity</string>
     <string name="title_activity_sphere">SphereActivity</string>
-
+	<string name="Calculate">Calculate</string>
 </resources>

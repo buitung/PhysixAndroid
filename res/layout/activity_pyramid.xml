@@ -1,16 +1,166 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".PyramidActivity" >
+    android:layout_height="match_parent" >
 
     <TextView
+        android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/Welcome" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/Copyright" />
+
+    <RelativeLayout
+        android:id="@+id/layoutBrick"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="22dp" >
+
+        <TextView
+            android:id="@+id/lbla"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="22dp"
+            android:text="a" />
+
+        <TextView
+            android:id="@+id/lblb"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/lbla"
+            android:layout_marginTop="22dp"
+            android:text="b" />
+
+        <TextView
+            android:id="@+id/lblc"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/lblb"
+            android:layout_marginTop="22dp"
+            android:text="c" />
+
+        <TextView
+            android:id="@+id/lblh"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/lblc"
+            android:layout_marginTop="22dp"
+            android:text="h" />
+
+        <EditText
+            android:id="@+id/txta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/lbla"
+            android:layout_alignBottom="@+id/lbla"
+            android:layout_marginLeft="18dp"
+            android:layout_toRightOf="@+id/lbla"
+            android:ems="10"
+            android:hint="Base side 1" >
+        </EditText>
+
+        <EditText
+            android:id="@+id/txtb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/lblb"
+            android:layout_alignBottom="@+id/lblb"
+            android:layout_alignLeft="@+id/txta"
+            android:ems="10"
+            android:hint="Base side 2" />
+
+        <EditText
+            android:id="@+id/txtc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/lblc"
+            android:layout_alignBottom="@+id/lblc"
+            android:layout_alignLeft="@+id/txtb"
+            android:ems="10"
+            android:hint="Base side 3" />
+
+        <EditText
+            android:id="@+id/txth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/lblh"
+            android:layout_alignBottom="@+id/lblh"
+            android:layout_alignLeft="@+id/txtc"
+            android:ems="10"
+            android:hint="height of the pyramid" />
+
+        <Button
+            android:id="@+id/btnCalculate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/txth"
+            android:layout_marginTop="22dp"
+            android:text="@string/Calculate" />
+
+        <TextView
+            android:id="@+id/lblArea"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnCalculate"
+            android:layout_marginTop="30dp"
+            android:layout_toLeftOf="@+id/txta"
+            android:text="Area" />
+
+        <TextView
+            android:id="@+id/lblVolume"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lblArea"
+            android:layout_marginTop="30dp"
+            android:layout_toLeftOf="@+id/txta"
+            android:text="Volume" />
+
+        <Button
+            android:id="@+id/btnInformation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="16dp"
+            android:text="@string/Information" />
+
+        <TextView
+            android:id="@+id/lblAreaAns"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/lblArea"
+            android:layout_alignLeft="@+id/txtc"
+            android:layout_alignRight="@+id/txtc"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/lblVolumeAns"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/lblVolume"
+            android:layout_alignLeft="@+id/lblAreaAns"
+            android:layout_alignRight="@+id/lblAreaAns"
+            android:text="" />
+    </RelativeLayout>
 
 </RelativeLayout>
