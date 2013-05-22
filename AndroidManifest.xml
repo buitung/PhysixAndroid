@@ -54,6 +54,70 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="fi.metropolia.VIOPE.MainActivity" />
         </activity>
+        <activity
+            android:name="fi.metropolia.VIOPE.physixviopeandroid.VectorAddActivity"
+            android:label="@string/title_activity_vector_add" >
+        </activity>
+        <activity
+            android:name="fi.metropolia.VIOPE.physixviopeandroid.VectorSubtractActivity"
+            android:label="@string/title_activity_vector_subtract" >
+        </activity>
+        <activity
+            android:name="fi.metropolia.VIOPE.physixviopeandroid.VectorProductActivity"
+            android:label="@string/title_activity_vector_product" >
+        </activity>
+        <activity
+            android:name="fi.metropolia.VIOPE.physixviopeandroid.VectorCrossProductActivity"
+            android:label="@string/title_activity_vector_cross_product" >
+        </activity>
+        <activity
+            android:name="fi.metropolia.VIOPE.physixviopeandroid.VectorDotProductActivity"
+            android:label="@string/title_activity_vector_dot_product" >
+        </activity>
+        <activity
+            android:name="fi.metropolia.VIOPE.physixviopeandroid.VectorDistanceActivity"
+            android:label="@string/title_activity_vector_distance" >
+        </activity>
+        <activity
+            android:name="fi.metropolia.VIOPE.physixviopeandroid.VectorAngleActivity"
+            android:label="@string/title_activity_vector_angle" >
+        </activity>
+        <activity
+            android:name="fi.metropolia.VIOPE.physixviopeandroid.VectorInformationActivity"
+            android:label="@string/title_activity_vector_information" >
+        </activity>
+        <activity
+            android:name="fi.metropolia.VIOPE.physixviopeandroid.SideCalActivity"
+            android:label="@string/title_activity_side_cal" >
+        </activity>
+        <activity
+            android:name="fi.metropolia.VIOPE.physixviopeandroid.AngleCalActivity"
+            android:label="@string/title_activity_angle_cal" >
+        </activity>
+        <activity
+            android:name="fi.metropolia.VIOPE.physixviopeandroid.TriangleActivity"
+            android:label="@string/title_activity_triangle" >
+        </activity>
+        <activity
+            android:name="fi.metropolia.VIOPE.physixviopeandroid.QuadActivity"
+            android:label="@string/title_activity_quad" >
+        </activity>
+        <activity
+            android:name="fi.metropolia.VIOPE.physixviopeandroid.PyramidActivity"
+            android:label="@string/title_activity_pyramid" >
+        </activity>
+        <activity
+            android:name="fi.metropolia.VIOPE.physixviopeandroid.BrickActivity"
+            android:label="@string/title_activity_brick" >
+        </activity>
+        <activity
+            android:name="fi.metropolia.VIOPE.physixviopeandroid.CircleActivity"
+            android:label="@string/title_activity_circle" >
+        </activity>
+        <activity
+            android:name="fi.metropolia.VIOPE.physixviopeandroid.SphereActivity"
+            android:label="@string/title_activity_sphere" >
+        </activity>
     </application>
 
 </manifest>

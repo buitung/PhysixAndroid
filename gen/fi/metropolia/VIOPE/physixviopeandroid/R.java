@@ -39,28 +39,68 @@ public final class R {
         public static final int textView2=0x7f080001;
     }
     public static final class layout {
-        public static final int activity_geometry=0x7f030000;
-        public static final int activity_main=0x7f030001;
-        public static final int activity_projectile=0x7f030002;
-        public static final int activity_trigonometry=0x7f030003;
-        public static final int activity_vector=0x7f030004;
+        public static final int activity_angle_cal=0x7f030000;
+        public static final int activity_brick=0x7f030001;
+        public static final int activity_circle=0x7f030002;
+        public static final int activity_geometry=0x7f030003;
+        public static final int activity_main=0x7f030004;
+        public static final int activity_projectile=0x7f030005;
+        public static final int activity_pyramid=0x7f030006;
+        public static final int activity_quad=0x7f030007;
+        public static final int activity_side_cal=0x7f030008;
+        public static final int activity_sphere=0x7f030009;
+        public static final int activity_triangle=0x7f03000a;
+        public static final int activity_trigonometry=0x7f03000b;
+        public static final int activity_vector=0x7f03000c;
+        public static final int activity_vector_add=0x7f03000d;
+        public static final int activity_vector_angle=0x7f03000e;
+        public static final int activity_vector_cross_product=0x7f03000f;
+        public static final int activity_vector_distance=0x7f030010;
+        public static final int activity_vector_dot_product=0x7f030011;
+        public static final int activity_vector_information=0x7f030012;
+        public static final int activity_vector_product=0x7f030013;
+        public static final int activity_vector_subtract=0x7f030014;
     }
     public static final class menu {
-        public static final int geometry=0x7f070000;
-        public static final int main=0x7f070001;
-        public static final int projectile=0x7f070002;
-        public static final int trigonometry=0x7f070003;
-        public static final int vector=0x7f070004;
+        public static final int angle_cal=0x7f070000;
+        public static final int brick=0x7f070001;
+        public static final int circle=0x7f070002;
+        public static final int geometry=0x7f070003;
+        public static final int main=0x7f070004;
+        public static final int projectile=0x7f070005;
+        public static final int pyramid=0x7f070006;
+        public static final int quad=0x7f070007;
+        public static final int side_cal=0x7f070008;
+        public static final int sphere=0x7f070009;
+        public static final int triangle=0x7f07000a;
+        public static final int trigonometry=0x7f07000b;
+        public static final int vector=0x7f07000c;
+        public static final int vector_add=0x7f07000d;
+        public static final int vector_angle=0x7f07000e;
+        public static final int vector_cross_product=0x7f07000f;
+        public static final int vector_distance=0x7f070010;
+        public static final int vector_dot_product=0x7f070011;
+        public static final int vector_information=0x7f070012;
+        public static final int vector_product=0x7f070013;
+        public static final int vector_subtract=0x7f070014;
     }
     public static final class string {
+        public static final int Add=0x7f050013;
+        public static final int Angle=0x7f050019;
         public static final int Brick=0x7f05000f;
         public static final int Circle=0x7f05000b;
         public static final int Copyright=0x7f050004;
+        public static final int Cross_Product=0x7f050016;
+        public static final int Distance=0x7f050018;
+        public static final int Dot_Product=0x7f050017;
         public static final int Geometry=0x7f050006;
+        public static final int Information=0x7f05001a;
+        public static final int Product=0x7f050015;
         public static final int Projectile=0x7f050007;
         public static final int Pyramid=0x7f05000d;
         public static final int Quad=0x7f05000c;
         public static final int Sphere=0x7f05000e;
+        public static final int Subtract=0x7f050014;
         public static final int Triangle=0x7f05000a;
         public static final int Trigonometry=0x7f050008;
         public static final int Vector=0x7f050005;
@@ -68,10 +108,26 @@ public final class R {
         public static final int action_settings=0x7f050001;
         public static final int app_name=0x7f050000;
         public static final int hello_world=0x7f050002;
+        public static final int title_activity_angle_cal=0x7f050024;
+        public static final int title_activity_brick=0x7f050028;
+        public static final int title_activity_circle=0x7f050029;
         public static final int title_activity_geometry=0x7f050009;
         public static final int title_activity_projectile=0x7f050012;
+        public static final int title_activity_pyramid=0x7f050027;
+        public static final int title_activity_quad=0x7f050026;
+        public static final int title_activity_side_cal=0x7f050023;
+        public static final int title_activity_sphere=0x7f05002a;
+        public static final int title_activity_triangle=0x7f050025;
         public static final int title_activity_trigonometry=0x7f050011;
         public static final int title_activity_vector=0x7f050010;
+        public static final int title_activity_vector_add=0x7f05001b;
+        public static final int title_activity_vector_angle=0x7f050021;
+        public static final int title_activity_vector_cross_product=0x7f05001e;
+        public static final int title_activity_vector_distance=0x7f050020;
+        public static final int title_activity_vector_dot_product=0x7f05001f;
+        public static final int title_activity_vector_information=0x7f050022;
+        public static final int title_activity_vector_product=0x7f05001d;
+        public static final int title_activity_vector_subtract=0x7f05001c;
     }
     public static final class style {
         /** 

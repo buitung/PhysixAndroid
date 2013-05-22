@@ -20,5 +20,29 @@
     <string name="title_activity_vector">VectorActivity</string>
     <string name="title_activity_trigonometry">TrigonometryActivity</string>
     <string name="title_activity_projectile">ProjectileActivity</string>
+    <string name="Add">Add</string>
+    <string name="Subtract">Subtract</string>
+    <string name="Product">Product</string>
+    <string name="Cross_Product">Cross Product</string>
+    <string name="Dot_Product">Dot Product</string>
+    <string name="Distance">Distance</string>
+    <string name="Angle">Angle</string>
+    <string name="Information">Information</string>
+    <string name="title_activity_vector_add">VectorAddActivity</string>
+    <string name="title_activity_vector_subtract">VectorSubtractActivity</string>
+    <string name="title_activity_vector_product">VectorProductActivity</string>
+    <string name="title_activity_vector_cross_product">VectorCrossProductActivity</string>
+    <string name="title_activity_vector_dot_product">VectorDotProductActivity</string>
+    <string name="title_activity_vector_distance">VectorDistanceActivity</string>
+    <string name="title_activity_vector_angle">VectorAngleActivity</string>
+    <string name="title_activity_vector_information">VectorInformationActivity</string>
+    <string name="title_activity_side_cal">SideCalActivity</string>
+    <string name="title_activity_angle_cal">AngleCalActivity</string>
+    <string name="title_activity_triangle">TriangleActivity</string>
+    <string name="title_activity_quad">QuadActivity</string>
+    <string name="title_activity_pyramid">PyramidActivity</string>
+    <string name="title_activity_brick">BrickActivity</string>
+    <string name="title_activity_circle">CircleActivity</string>
+    <string name="title_activity_sphere">SphereActivity</string>
 
 </resources>
