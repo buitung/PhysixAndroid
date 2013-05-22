@@ -1,5 +1,7 @@
 package fi.metropolia.VIOPE.physixlib;
 
+import fi.metropolia.VIOPE.exception.NegativeException;
+
 /**
  * 
  * @author duyb
@@ -81,11 +83,12 @@ public class MathUtils {
 	 *            float
 	 * @return the float value of the length of the opposite side providing a
 	 *         for angle and b for hypotenuse.
+	 * @throws NegativeException 
 	 */
 
-	public static float OppositeSide(float a, float b) {
+	public static float OppositeSide(float a, float b) throws NegativeException {
 		if (b <= 0)
-			throw new IllegalArgumentException(
+			throw new NegativeException(
 					"The hypotenuse must be positive");
 		return b * (float) Math.sin(a);
 	}
@@ -98,11 +101,12 @@ public class MathUtils {
 	 *            float
 	 * @return the float value of the angle providing a for opposite and b for
 	 *         hypotenuse.
+	 * @throws NegativeException 
 	 */
 
-	public static float SinAngle(float a, float b) {
+	public static float SinAngle(float a, float b) throws NegativeException {
 		if (b <= 0 || a <= 0)
-			throw new IllegalArgumentException("Two side must be positive");
+			throw new NegativeException("Two side must be positive");
 		return (float) Math.asin(a / b);
 	}
 
@@ -114,10 +118,11 @@ public class MathUtils {
 	 *            float
 	 * @return the float value of the length of the adjacent side providing a
 	 *         for angle and b for hypotenuse.
+	 * @throws NegativeException 
 	 */
-	public static float AdjacentSide(float a, float b) {
+	public static float AdjacentSide(float a, float b) throws NegativeException {
 		if (b <= 0)
-			throw new IllegalArgumentException(
+			throw new NegativeException(
 					"The hypotenuse must be positive");
 		return b * (float) Math.cos(a);
 	}
@@ -130,10 +135,11 @@ public class MathUtils {
 	 *            float
 	 * @return the float value of the angle providing a for adjacent and b for
 	 *         hypotenuse.
+	 * @throws NegativeException 
 	 */
-	public static float CosAngle(float a, float b) {
+	public static float CosAngle(float a, float b) throws NegativeException {
 		if (a * b <= 0)
-			throw new IllegalArgumentException("Two side must be positive");
+			throw new NegativeException("Two side must be positive");
 		return (float) Math.acos(a / b);
 	}
 
@@ -145,10 +151,11 @@ public class MathUtils {
 	 *            float
 	 * @return the float value of the angle providing a for opposite and b for
 	 *         adjacent.
+	 * @throws NegativeException 
 	 */
-	public static float TanAngle(float a, float b) {
+	public static float TanAngle(float a, float b) throws NegativeException {
 		if (a * b <= 0)
-			throw new IllegalArgumentException("Two side must be positive");
+			throw new NegativeException("Two side must be positive");
 		return (float) Math.atan(a / b);
 	}
 

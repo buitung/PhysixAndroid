@@ -30,7 +30,7 @@
         android:layout_marginTop="22dp" >
 
         <TextView
-            android:id="@+id/lblWidth"
+            android:id="@+id/lblWidthBrick"
             android:layout_width="75dp"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
@@ -39,84 +39,85 @@
             android:text="Width" />
 
         <TextView
-            android:id="@+id/lblHeight"
+            android:id="@+id/lblHeightBrick"
             android:layout_width="75dp"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
-            android:layout_below="@+id/lblWidth"
+            android:layout_below="@+id/lblWidthBrick"
             android:layout_marginTop="35dp"
             android:text="Height" />
 
         <TextView
-            android:id="@+id/lblLength"
+            android:id="@+id/lblLengthBrick"
             android:layout_width="75dp"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
-            android:layout_below="@+id/lblHeight"
+            android:layout_below="@+id/lblHeightBrick"
             android:layout_marginTop="35dp"
             android:text="Length" />
 
         <EditText
-            android:id="@+id/txtWidth"
+            android:id="@+id/txtWidthBrick"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignBaseline="@+id/lblWidth"
-            android:layout_alignBottom="@+id/lblWidth"
+            android:layout_alignBaseline="@+id/lblWidthBrick"
+            android:layout_alignBottom="@+id/lblWidthBrick"
             android:layout_marginLeft="18dp"
-            android:layout_toRightOf="@+id/lblWidth"
+            android:layout_toRightOf="@+id/lblWidthBrick"
             android:ems="10"
             android:hint="Width of the Brick" >
         </EditText>
 
         <EditText
-            android:id="@+id/txtHeight"
+            android:id="@+id/txtHeightBrick"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignBaseline="@+id/lblHeight"
-            android:layout_alignBottom="@+id/lblHeight"
-            android:layout_alignLeft="@+id/txtWidth"
+            android:layout_alignBaseline="@+id/lblHeightBrick"
+            android:layout_alignBottom="@+id/lblHeightBrick"
+            android:layout_alignLeft="@+id/txtWidthBrick"
             android:ems="10"
             android:hint="Height of the Brick" />
 
         <EditText
-            android:id="@+id/txtLength"
+            android:id="@+id/txtLengthBrick"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignBaseline="@+id/lblLength"
-            android:layout_alignBottom="@+id/lblLength"
-            android:layout_alignLeft="@+id/txtHeight"
+            android:layout_alignBaseline="@+id/lblLengthBrick"
+            android:layout_alignBottom="@+id/lblLengthBrick"
+            android:layout_alignLeft="@+id/txtHeightBrick"
             android:ems="10"
             android:hint="Length of the Brick" />
 
         <Button
-            android:id="@+id/btnCalculate"
+            android:id="@+id/btnCalculateBrick"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
-            android:layout_below="@+id/txtLength"
+            android:layout_below="@+id/txtLengthBrick"
             android:layout_marginTop="22dp"
+            android:onClick="calculate"
             android:text="@string/Calculate" />
 
         <TextView
-            android:id="@+id/lblArea"
+            android:id="@+id/lblAreaBrick"
             android:layout_width="75dp"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/btnCalculate"
+            android:layout_below="@+id/btnCalculateBrick"
             android:layout_marginTop="35dp"
-            android:layout_toLeftOf="@+id/txtWidth"
+            android:layout_toLeftOf="@+id/txtWidthBrick"
             android:text="Area" />
 
         <TextView
-            android:id="@+id/lblVolume"
+            android:id="@+id/lblVolumeBrick"
             android:layout_width="75dp"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/lblArea"
+            android:layout_below="@+id/lblAreaBrick"
             android:layout_marginTop="35dp"
-            android:layout_toLeftOf="@+id/txtWidth"
+            android:layout_toLeftOf="@+id/txtWidthBrick"
             android:text="Volume" />
 
         <Button
-            android:id="@+id/btnInformation"
+            android:id="@+id/btnInformationBrick"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
@@ -126,21 +127,21 @@
             android:text="@string/Information" />
 
         <TextView
-            android:id="@+id/lblAreaAns"
+            android:id="@+id/lblAreaAnsBrick"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignBottom="@+id/lblArea"
-            android:layout_alignLeft="@+id/txtLength"
-            android:layout_alignRight="@+id/txtLength"
+            android:layout_alignBottom="@+id/lblAreaBrick"
+            android:layout_alignLeft="@+id/txtLengthBrick"
+            android:layout_alignRight="@+id/txtLengthBrick"
             android:text="" />
 
         <TextView
-            android:id="@+id/lblVolumeAns"
+            android:id="@+id/lblVolumeAnsBrick"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignBottom="@+id/lblVolume"
-            android:layout_alignLeft="@+id/lblAreaAns"
-            android:layout_alignRight="@+id/lblAreaAns"
+            android:layout_alignBottom="@+id/lblVolumeBrick"
+            android:layout_alignLeft="@+id/lblAreaAnsBrick"
+            android:layout_alignRight="@+id/lblAreaAnsBrick"
             android:text="" />
     </RelativeLayout>
 

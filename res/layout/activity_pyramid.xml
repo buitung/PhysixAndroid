@@ -20,7 +20,7 @@
         android:text="@string/Copyright" />
 
     <RelativeLayout
-        android:id="@+id/layoutBrick"
+        android:id="@+id/layoutPyramid"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
@@ -30,112 +30,113 @@
         android:layout_marginTop="22dp" >
 
         <TextView
-            android:id="@+id/lbla"
-            android:layout_width="75dp"
+            android:id="@+id/lblaPyramid"
+            android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
             android:layout_marginTop="22dp"
-            android:text="a" />
+            android:text="Base side 1" />
 
         <TextView
-            android:id="@+id/lblb"
-            android:layout_width="75dp"
+            android:id="@+id/lblbPyramid"
+            android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
-            android:layout_below="@+id/lbla"
+            android:layout_below="@+id/lblaPyramid"
             android:layout_marginTop="22dp"
-            android:text="b" />
+            android:text="Base side 2" />
 
         <TextView
-            android:id="@+id/lblc"
-            android:layout_width="75dp"
+            android:id="@+id/lblcPyramid"
+            android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
-            android:layout_below="@+id/lblb"
+            android:layout_below="@+id/lblbPyramid"
             android:layout_marginTop="22dp"
-            android:text="c" />
+            android:text="Base side 3" />
 
         <TextView
-            android:id="@+id/lblh"
-            android:layout_width="75dp"
+            android:id="@+id/lblhPyramid"
+            android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
-            android:layout_below="@+id/lblc"
+            android:layout_below="@+id/lblcPyramid"
             android:layout_marginTop="22dp"
-            android:text="h" />
+            android:text="Height" />
 
         <EditText
-            android:id="@+id/txta"
+            android:id="@+id/txtaPyramid"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignBaseline="@+id/lbla"
-            android:layout_alignBottom="@+id/lbla"
+            android:layout_alignBaseline="@+id/lblaPyramid"
+            android:layout_alignBottom="@+id/lblaPyramid"
             android:layout_marginLeft="18dp"
-            android:layout_toRightOf="@+id/lbla"
+            android:layout_toRightOf="@+id/lblaPyramid"
             android:ems="10"
             android:hint="Base side 1" >
         </EditText>
 
         <EditText
-            android:id="@+id/txtb"
+            android:id="@+id/txtbPyramid"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignBaseline="@+id/lblb"
-            android:layout_alignBottom="@+id/lblb"
-            android:layout_alignLeft="@+id/txta"
+            android:layout_alignBaseline="@+id/lblbPyramid"
+            android:layout_alignBottom="@+id/lblbPyramid"
+            android:layout_alignLeft="@+id/txtaPyramid"
             android:ems="10"
             android:hint="Base side 2" />
 
         <EditText
-            android:id="@+id/txtc"
+            android:id="@+id/txtcPyramid"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignBaseline="@+id/lblc"
-            android:layout_alignBottom="@+id/lblc"
-            android:layout_alignLeft="@+id/txtb"
+            android:layout_alignBaseline="@+id/lblcPyramid"
+            android:layout_alignBottom="@+id/lblcPyramid"
+            android:layout_alignLeft="@+id/txtbPyramid"
             android:ems="10"
             android:hint="Base side 3" />
 
         <EditText
-            android:id="@+id/txth"
+            android:id="@+id/txthPyramid"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignBaseline="@+id/lblh"
-            android:layout_alignBottom="@+id/lblh"
-            android:layout_alignLeft="@+id/txtc"
+            android:layout_alignBaseline="@+id/lblhPyramid"
+            android:layout_alignBottom="@+id/lblhPyramid"
+            android:layout_alignLeft="@+id/txtcPyramid"
             android:ems="10"
             android:hint="height of the pyramid" />
 
         <Button
-            android:id="@+id/btnCalculate"
+            android:id="@+id/btnCalculatePyramid"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
-            android:layout_below="@+id/txth"
+            android:layout_below="@+id/txthPyramid"
             android:layout_marginTop="22dp"
+            android:onClick="calculate"
             android:text="@string/Calculate" />
 
         <TextView
-            android:id="@+id/lblArea"
-            android:layout_width="75dp"
+            android:id="@+id/lblAreaPyramid"
+            android:layout_width="100dp"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/btnCalculate"
+            android:layout_below="@+id/btnCalculatePyramid"
             android:layout_marginTop="30dp"
-            android:layout_toLeftOf="@+id/txta"
+            android:layout_toLeftOf="@+id/txtaPyramid"
             android:text="Area" />
 
         <TextView
-            android:id="@+id/lblVolume"
-            android:layout_width="75dp"
+            android:id="@+id/lblVolumePyramid"
+            android:layout_width="100dp"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/lblArea"
+            android:layout_below="@+id/lblAreaPyramid"
             android:layout_marginTop="30dp"
             android:layout_toLeftOf="@+id/txta"
             android:text="Volume" />
 
         <Button
-            android:id="@+id/btnInformation"
+            android:id="@+id/btnInformationPyramid"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
@@ -145,21 +146,21 @@
             android:text="@string/Information" />
 
         <TextView
-            android:id="@+id/lblAreaAns"
+            android:id="@+id/lblAreaAnsPyramid"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignBottom="@+id/lblArea"
-            android:layout_alignLeft="@+id/txtc"
-            android:layout_alignRight="@+id/txtc"
+            android:layout_alignBottom="@+id/lblAreaPyramid"
+            android:layout_alignLeft="@+id/txtcPyramid"
+            android:layout_alignRight="@+id/txtcPyramid"
             android:text="" />
 
         <TextView
-            android:id="@+id/lblVolumeAns"
+            android:id="@+id/lblVolumeAnsPyramid"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignBottom="@+id/lblVolume"
-            android:layout_alignLeft="@+id/lblAreaAns"
-            android:layout_alignRight="@+id/lblAreaAns"
+            android:layout_alignBottom="@+id/lblVolumePyramid"
+            android:layout_alignLeft="@+id/lblAreaAnsPyramid"
+            android:layout_alignRight="@+id/lblAreaAnsPyramid"
             android:text="" />
     </RelativeLayout>
 

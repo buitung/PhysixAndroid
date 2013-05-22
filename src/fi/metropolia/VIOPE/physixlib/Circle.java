@@ -1,5 +1,7 @@
 package fi.metropolia.VIOPE.physixlib;
 
+import fi.metropolia.VIOPE.exception.NegativeException;
+
 /**
  * 
  * @author duyb
@@ -12,10 +14,11 @@ public class Circle {
 	 * 
 	 * @param r
 	 *            radius of circle
+	 * @throws NegativeException 
 	 */
-	public Circle(float r) {
-		if (radius <= 0)
-			throw new IllegalArgumentException("Radius must be positive");
+	public Circle(float r) throws NegativeException {
+		if (r <= 0)
+			throw new NegativeException("Radius must be positive");
 		this.radius = r;
 	}
 

@@ -1,5 +1,7 @@
 package fi.metropolia.VIOPE.physixlib;
 
+import fi.metropolia.VIOPE.exception.NegativeException;
+
 /**
  * 
  * @author duyb
@@ -15,10 +17,11 @@ public class Brick {
 	 *            of Brick
 	 * @param len
 	 *            of Brick
+	 * @throws NegativeException 
 	 */
-	public Brick(float width, float height, float len) {
+	public Brick(float width, float height, float len) throws NegativeException {
 		if (width <= 0 || height <= 0 || len <= 0)
-			throw new IllegalArgumentException("Width, height and length must be positive");
+			throw new NegativeException("Width, height and length must be positive");
 		this.width = width;
 		this.height = height;
 		this.len = len;

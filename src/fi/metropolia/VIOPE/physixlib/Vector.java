@@ -1,4 +1,7 @@
 package fi.metropolia.VIOPE.physixlib;
+
+import fi.metropolia.VIOPE.exception.NegativeException;
+
 /**
  * @author lucasc
  */
@@ -114,8 +117,9 @@ public class Vector {
      *
      * @param vecNew
      * @return the angle between this vector and another vector
+     * @throws NegativeException 
      */
-    public float AngleVec(Vector vecNew) {
+    public float AngleVec(Vector vecNew) throws NegativeException {
         return MathUtils.CosAngle(DotProduct(vecNew),this.Magnitude()*vecNew.Magnitude());
 
     }

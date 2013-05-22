@@ -1,6 +1,7 @@
 package fi.metropolia.VIOPE.physixviopeandroid;
 
-import fi.metropolia.VIOPE.physixlib.Brick;
+import fi.metropolia.VIOPE.exception.NegativeException;
+import fi.metropolia.VIOPE.exception.ParsingException;
 import fi.metropolia.VIOPE.physixlib.Triangle;
 import android.os.Bundle;
 import android.app.Activity;
@@ -25,43 +26,59 @@ public class TriangleActivity extends Activity {
 		getMenuInflater().inflate(R.menu.triangle, menu);
 		return true;
 	}
-	public void calculate(View view){
-		float a = 0,b = 0,c = 0;
-		try{
-			EditText editText = (EditText)findViewById(R.id.txtaTriangle);
-			a = Float.parseFloat(editText.getText().toString());
-			editText = (EditText)findViewById(R.id.txtbTriangle);
-			b = Float.parseFloat(editText.getText().toString());
-			editText = (EditText)findViewById(R.id.txtcTriangle);
-			c= Float.parseFloat(editText.getText().toString());
-		} catch (Exception e){
-			Context context = getApplicationContext();
-			CharSequence text = "Please enter three sides of triangle in the right form";
-			int duration = Toast.LENGTH_LONG;
-			Toast toast = Toast.makeText(context, text, duration);
-			toast.show();
-			TextView txtView = (TextView)findViewById(R.id.lblAreaAnsTriangle);
-			txtView.setText("");
-			txtView = (TextView)findViewById(R.id.lblPerimeterAnsTriangle);
-			txtView.setText("");
-		}
-		try{
+
+	public void calculate(View view) throws NegativeException, ParsingException {
+		float a = 0, b = 0, c = 0;
+		try {
+			try {
+				EditText editText = (EditText) findViewById(R.id.txtaTriangle);
+				a = Float.parseFloat(editText.getText().toString());
+				editText = (EditText) findViewById(R.id.txtbTriangle);
+				b = Float.parseFloat(editText.getText().toString());
+				editText = (EditText) findViewById(R.id.txtcTriangle);
+				c = Float.parseFloat(editText.getText().toString());
+			} catch (Exception e) {
+				throw new ParsingException(
+						"Please enter inputs in the right form");
+			}
 			Triangle triangle = new Triangle(a, b, c);
-			TextView txtView = (TextView)findViewById(R.id.lblAreaAnsTriangle);
+			TextView txtView = (TextView) findViewById(R.id.lblAreaAnsTriangle);
 			txtView.setText(Float.toString(triangle.Area()));
-			txtView = (TextView)findViewById(R.id.lblPerimeterAnsTriangle);
+			txtView = (TextView) findViewById(R.id.lblPerimeterAnsTriangle);
 			txtView.setText(Float.toString((triangle.Perimeter())));
-		} catch (IllegalArgumentException e){
+
+		} catch (NegativeException e) {
 			Context context = getApplicationContext();
 			CharSequence text = e.getMessage();
 			int duration = Toast.LENGTH_LONG;
 			Toast toast = Toast.makeText(context, text, duration);
 			toast.show();
-			TextView txtView = (TextView)findViewById(R.id.lblAreaAnsTriangle);
+			TextView txtView = (TextView) findViewById(R.id.lblAreaAnsTriangle);
 			txtView.setText("");
-			txtView = (TextView)findViewById(R.id.lblPerimeterAnsTriangle);
+			txtView = (TextView) findViewById(R.id.lblPerimeterAnsTriangle);
 			txtView.setText("");
-			
+		} catch (ParsingException e) {
+			Context context = getApplicationContext();
+			CharSequence text = e.getMessage();
+			int duration = Toast.LENGTH_LONG;
+			Toast toast = Toast.makeText(context, text, duration);
+			toast.show();
+			TextView txtView = (TextView) findViewById(R.id.lblAreaAnsTriangle);
+			txtView.setText("");
+			txtView = (TextView) findViewById(R.id.lblPerimeterAnsTriangle);
+			txtView.setText("");
+
+		} catch (IllegalArgumentException e) {
+			Context context = getApplicationContext();
+			CharSequence text = e.getMessage();
+			int duration = Toast.LENGTH_LONG;
+			Toast toast = Toast.makeText(context, text, duration);
+			toast.show();
+			TextView txtView = (TextView) findViewById(R.id.lblAreaAnsTriangle);
+			txtView.setText("");
+			txtView = (TextView) findViewById(R.id.lblPerimeterAnsTriangle);
+			txtView.setText("");
+
 		}
 	}
 }

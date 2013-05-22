@@ -1,5 +1,7 @@
 package fi.metropolia.VIOPE.physixlib;
 
+import fi.metropolia.VIOPE.exception.NegativeException;
+
 /**
  * 
  * @author duyb
@@ -13,10 +15,11 @@ public class Quad {
 	 *            of Quad
 	 * @param height
 	 *            of Quad Constructor
+	 * @throws NegativeException 
 	 */
-	public Quad(float width, float height) {
+	public Quad(float width, float height) throws NegativeException {
 		if (width <= 0 || height <= 0)
-			throw new IllegalArgumentException(
+			throw new NegativeException(
 					"Width and Height must be positive");
 		this.width = width;
 		this.height = height;

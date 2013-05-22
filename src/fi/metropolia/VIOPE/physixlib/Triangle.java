@@ -1,5 +1,7 @@
 package fi.metropolia.VIOPE.physixlib;
 
+import fi.metropolia.VIOPE.exception.NegativeException;
+
 /**
  * 
  * @author duyb
@@ -15,11 +17,12 @@ public class Triangle {
 	 *            side of triangle
 	 * @param c
 	 *            side of triangle Constructor
+	 * @throws NegativeException 
 	 */
-	public Triangle(float a, float b, float c) {
+	public Triangle(float a, float b, float c) throws NegativeException {
 		if (a <= 0 || b <= 0 || c <= 0)
-			throw new IllegalArgumentException("Three sides must be positive");
-		if (a + b < c || a + c < b || b + c < a)
+			throw new NegativeException("Three sides must be positive");
+		if (a + b <= c || a + c <= b || b + c <= a)
 			throw new IllegalArgumentException(
 					"These are not three sides of a triangle");
 		this.a = a;

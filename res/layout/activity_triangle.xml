@@ -24,10 +24,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
-        android:layout_below="@+id/textView1"
-        android:layout_marginTop="22dp" >
+        android:layout_alignParentLeft="true" >
 
         <TextView
             android:id="@+id/lblaTriangle"
@@ -36,7 +33,7 @@
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
             android:layout_marginTop="35dp"
-            android:text="a" />
+            android:text="Side a" />
 
         <TextView
             android:id="@+id/lblbTriangle"
@@ -45,7 +42,7 @@
             android:layout_alignParentLeft="true"
             android:layout_below="@+id/lblaTriangle"
             android:layout_marginTop="35dp"
-            android:text="b" />
+            android:text="Side b" />
 
         <TextView
             android:id="@+id/lblcTriangle"
@@ -54,7 +51,7 @@
             android:layout_alignParentLeft="true"
             android:layout_below="@+id/lblbTriangle"
             android:layout_marginTop="35dp"
-            android:text="c" />
+            android:text="Side c" />
 
         <EditText
             android:id="@+id/txtaTriangle"
@@ -66,6 +63,8 @@
             android:layout_toRightOf="@+id/lblaTriangle"
             android:ems="10"
             android:hint="Base side 1" >
+
+            <requestFocus />
         </EditText>
 
         <EditText
@@ -132,16 +131,15 @@
             android:layout_height="wrap_content"
             android:layout_alignBottom="@+id/lblAreaTriangle"
             android:layout_alignLeft="@+id/txtcTriangle"
-            android:layout_alignRight="@+id/txtcTriangle"
-            android:text="" />
+            android:layout_alignRight="@+id/txtcTriangle" />
 
         <TextView
             android:id="@+id/lblPerimeterAnsTriangle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignBottom="@+id/lblVolumeTriangle"
+            android:layout_alignBottom="@+id/lblPerimeterTriangle"
             android:layout_alignLeft="@+id/lblAreaAnsTriangle"
-            android:layout_alignRight="@+id/lblAreaAnsTriangle"
-            android:text="" />
+            android:layout_alignParentRight="true" />
     </RelativeLayout>
+
 </RelativeLayout>

@@ -20,7 +20,7 @@
         android:text="@string/Copyright" />
 
     <RelativeLayout
-        android:id="@+id/lblCircle"
+        android:id="@+id/layoutSphere"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
@@ -30,7 +30,7 @@
         android:layout_marginTop="40dp" >
 
         <TextView
-            android:id="@+id/lblRadius"
+            android:id="@+id/lblRadiusSphere"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
@@ -39,46 +39,47 @@
             android:text="Radius" />
 
         <EditText
-            android:id="@+id/txtRadius"
+            android:id="@+id/txtRadiusSphere"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignBaseline="@+id/lblRadius"
-            android:layout_alignBottom="@+id/lblRadius"
+            android:layout_alignBaseline="@+id/lblRadiusSphere"
+            android:layout_alignBottom="@+id/lblRadiusSphere"
             android:layout_marginLeft="18dp"
-            android:layout_toRightOf="@+id/lblRadius"
+            android:layout_toRightOf="@+id/lblRadiusSphere"
             android:hint="Radius of the Sphere"
             android:ems="10" >
         </EditText>
 
         <Button
-            android:id="@+id/btnCalculate"
+            android:id="@+id/btnCalculateSphere"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
-            android:layout_below="@+id/txtRadius"
+            android:layout_below="@+id/txtRadiusSphere"
             android:layout_marginTop="50dp"
+            android:onClick="calculate"
             android:text="@string/Calculate" />
 
         <TextView
-            android:id="@+id/lblArea"
+            android:id="@+id/lblAreaSphere"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/btnCalculate"
+            android:layout_below="@+id/btnCalculateSphere"
             android:layout_marginTop="40dp"
-            android:layout_toLeftOf="@+id/txtRadius"
+            android:layout_toLeftOf="@+id/txtRadiusSphere"
             android:text="Area" />
 
         <TextView
-            android:id="@+id/lblVolume"
+            android:id="@+id/lblVolumeSphere"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/lblArea"
+            android:layout_below="@+id/lblAreaSphere"
             android:layout_marginTop="40dp"
-            android:layout_toLeftOf="@+id/txtRadius"
+            android:layout_toLeftOf="@+id/txtRadiusSphere"
             android:text="Volume" />
 
         <Button
-            android:id="@+id/btnInformation"
+            android:id="@+id/btnInformationSphere"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
@@ -88,21 +89,21 @@
             android:text="@string/Information" />
 
         <TextView
-            android:id="@+id/lblAreaAns"
+            android:id="@+id/lblAreaAnsSphere"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignBaseline="@+id/lblArea"
-            android:layout_alignBottom="@+id/lblArea"
-            android:layout_alignLeft="@+id/txtRadius"
+            android:layout_alignBaseline="@+id/lblAreaSphere"
+            android:layout_alignBottom="@+id/lblAreaSphere"
+            android:layout_alignLeft="@+id/txtRadiusSphere"
             android:layout_alignParentRight="true"
             android:text="" />
 
         <TextView
-            android:id="@+id/lblVolumeAns"
+            android:id="@+id/lblVolumeAnsSphere"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignBottom="@+id/lblVolume"
-            android:layout_alignLeft="@+id/lblAreaAns"
+            android:layout_alignBottom="@+id/lblVolumeSphere"
+            android:layout_alignLeft="@+id/lblAreaAnsSphere"
             android:layout_alignParentRight="true"
             android:text="" />
 

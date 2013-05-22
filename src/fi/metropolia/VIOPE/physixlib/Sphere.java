@@ -1,5 +1,7 @@
 package fi.metropolia.VIOPE.physixlib;
 
+import fi.metropolia.VIOPE.exception.NegativeException;
+
 /**
  * 
  * @author duyb
@@ -12,10 +14,11 @@ public class Sphere {
 	 * 
 	 * @param r
 	 *            radius of sphere Constructor
+	 * @throws NegativeException 
 	 */
-	public Sphere(float r) {
-		if (radius <= 0)
-			throw new IllegalArgumentException("Radius must be positive");
+	public Sphere(float r) throws NegativeException {
+		if (r <= 0)
+			throw new NegativeException("Radius must be positive");
 		radius = r;
 	}
 

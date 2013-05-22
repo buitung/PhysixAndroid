@@ -1,8 +1,16 @@
 package fi.metropolia.VIOPE.physixviopeandroid;
 
+import fi.metropolia.VIOPE.exception.NegativeException;
+import fi.metropolia.VIOPE.exception.ParsingException;
+import fi.metropolia.VIOPE.physixlib.Sphere;
 import android.os.Bundle;
 import android.app.Activity;
+import android.content.Context;
 import android.view.Menu;
+import android.view.View;
+import android.widget.EditText;
+import android.widget.TextView;
+import android.widget.Toast;
 
 public class SphereActivity extends Activity {
 
@@ -19,4 +27,42 @@ public class SphereActivity extends Activity {
 		return true;
 	}
 
+	public void calculate(View view) {
+		float r = 0;
+		try {
+			try {
+				EditText editText = (EditText) findViewById(R.id.txtRadiusSphere);
+				r = Float.parseFloat(editText.getText().toString());
+			} catch (Exception e) {
+				throw new ParsingException("Please give input in the right form.");
+			}
+			Sphere sphere = new Sphere(r);
+			TextView txtView = (TextView) findViewById(R.id.lblAreaAnsSphere);
+			txtView.setText(Float.toString(sphere.Area()));
+			txtView = (TextView) findViewById(R.id.lblVolumeAnsSphere);
+			txtView.setText(Float.toString(sphere.Volume()));
+
+		} catch (NegativeException e) {
+			Context context = getApplicationContext();
+			CharSequence text = e.getMessage();
+			int duration = Toast.LENGTH_LONG;
+			Toast toast = Toast.makeText(context, text, duration);
+			toast.show();
+			TextView txtView = (TextView) findViewById(R.id.lblAreaAnsSphere);
+			txtView.setText("");
+			txtView = (TextView) findViewById(R.id.lblVolumeAnsSphere);
+			txtView.setText("");
+		} catch (ParsingException e) {
+			Context context = getApplicationContext();
+			CharSequence text = e.getMessage();
+			int duration = Toast.LENGTH_LONG;
+			Toast toast = Toast.makeText(context, text, duration);
+			toast.show();
+			TextView txtView = (TextView) findViewById(R.id.lblAreaAnsSphere);
+			txtView.setText("");
+			txtView = (TextView) findViewById(R.id.lblVolumeAnsSphere);
+			txtView.setText("");
+
+		}
+	}
 }

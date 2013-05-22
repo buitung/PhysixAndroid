@@ -30,7 +30,7 @@
         android:layout_marginTop="40dp" >
 
         <TextView
-            android:id="@+id/lblRadius"
+            android:id="@+id/lblRadiusCircle"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
@@ -39,46 +39,47 @@
             android:text="Radius" />
 
         <EditText
-            android:id="@+id/txtRadius"
+            android:id="@+id/txtRadiusCircle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignBaseline="@+id/lblRadius"
-            android:layout_alignBottom="@+id/lblRadius"
+            android:layout_alignBaseline="@+id/lblRadiusCircle"
+            android:layout_alignBottom="@+id/lblRadiusCircle"
             android:layout_marginLeft="18dp"
-            android:layout_toRightOf="@+id/lblRadius"
+            android:layout_toRightOf="@+id/lblRadiusCircle"
             android:ems="10"
             android:hint="Radius of the Circle" >
         </EditText>
 
         <Button
-            android:id="@+id/btnCalculate"
+            android:id="@+id/btnCalculateCircle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
-            android:layout_below="@+id/txtRadius"
+            android:layout_below="@+id/txtRadiusCircle"
             android:layout_marginTop="50dp"
+            android:onClick="calculate"
             android:text="@string/Calculate" />
 
         <TextView
-            android:id="@+id/lblArea"
+            android:id="@+id/lblAreaCircle"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/btnCalculate"
+            android:layout_below="@+id/btnCalculateCircle"
             android:layout_marginTop="40dp"
-            android:layout_toLeftOf="@+id/txtRadius"
+            android:layout_toLeftOf="@+id/txtRadiusCircle"
             android:text="Area" />
 
         <TextView
-            android:id="@+id/lblCircumference"
+            android:id="@+id/lblCircumferenceCircle"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/lblArea"
+            android:layout_below="@+id/lblAreaCircle"
             android:layout_marginTop="40dp"
-            android:layout_toLeftOf="@+id/txtRadius"
+            android:layout_toLeftOf="@+id/txtRadiusCircle"
             android:text="Circumference" />
 
         <Button
-            android:id="@+id/btnInformation"
+            android:id="@+id/btnInformationCircle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
@@ -88,21 +89,21 @@
             android:text="@string/Information" />
 
         <TextView
-            android:id="@+id/lblAreaAns"
+            android:id="@+id/lblAreaAnsCircle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignBaseline="@+id/lblArea"
-            android:layout_alignBottom="@+id/lblArea"
-            android:layout_alignLeft="@+id/txtRadius"
+            android:layout_alignBaseline="@+id/lblAreaCircle"
+            android:layout_alignBottom="@+id/lblAreaCircle"
+            android:layout_alignLeft="@+id/txtRadiusCircle"
             android:layout_alignParentRight="true"
             android:text="" />
 
         <TextView
-            android:id="@+id/lblCircumferenceAns"
+            android:id="@+id/lblCircumferenceAnsCircle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignBottom="@+id/lblCircumference"
-            android:layout_alignLeft="@+id/lblAreaAns"
+            android:layout_alignBottom="@+id/lblCircumferenceCircle"
+            android:layout_alignLeft="@+id/lblAreaAnsCircle"
             android:layout_alignParentRight="true"
             android:text="" />
     </RelativeLayout>

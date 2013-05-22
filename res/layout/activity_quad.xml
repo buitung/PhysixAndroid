@@ -20,7 +20,7 @@
         android:text="@string/Copyright" />
 
     <RelativeLayout
-        android:id="@+id/layoutBrick"
+        android:id="@+id/layoutQuad"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
@@ -30,7 +30,7 @@
         android:layout_marginTop="22dp" >
 
         <TextView
-            android:id="@+id/lblWidth"
+            android:id="@+id/lblWidthQuad"
             android:layout_width="75dp"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
@@ -39,67 +39,66 @@
             android:text="Width" />
 
         <TextView
-            android:id="@+id/lblHeight"
+            android:id="@+id/lblHeightQuad"
             android:layout_width="75dp"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
-            android:layout_below="@+id/lblWidth"
+            android:layout_below="@+id/lblWidthQuad"
             android:layout_marginTop="35dp"
             android:text="Height" />
 
         <EditText
-            android:id="@+id/txtWidth"
+            android:id="@+id/txtWidthQuad"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignBaseline="@+id/lblWidth"
-            android:layout_alignBottom="@+id/lblWidth"
+            android:layout_alignBaseline="@+id/lblWidthQuad"
+            android:layout_alignBottom="@+id/lblWidthQuad"
             android:layout_marginLeft="18dp"
-            android:layout_toRightOf="@+id/lblWidth"
+            android:layout_toRightOf="@+id/lblWidthQuad"
             android:ems="10"
             android:hint="Width of the Quad" >
-
         </EditText>
 
         <EditText
-            android:id="@+id/txtHeight"
+            android:id="@+id/txtHeightQuad"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignBaseline="@+id/lblHeight"
-            android:layout_alignBottom="@+id/lblHeight"
-            android:layout_alignLeft="@+id/txtWidth"
+            android:layout_alignBaseline="@+id/lblHeightQuad"
+            android:layout_alignBottom="@+id/lblHeightQuad"
+            android:layout_alignLeft="@+id/txtWidthQuad"
             android:ems="10"
             android:hint="Height of the Quad" />
 
-
         <Button
-            android:id="@+id/btnCalculate"
+            android:id="@+id/btnCalculateQuad"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
-            android:layout_below="@+id/txtHeight"
+            android:layout_below="@+id/txtHeightQuad"
             android:layout_marginTop="22dp"
+            android:onClick="calculate"
             android:text="@string/Calculate" />
 
         <TextView
-            android:id="@+id/lblArea"
+            android:id="@+id/lblAreaQuad"
             android:layout_width="75dp"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/btnCalculate"
+            android:layout_below="@+id/btnCalculateQuad"
             android:layout_marginTop="35dp"
-            android:layout_toLeftOf="@+id/txtWidth"
+            android:layout_toLeftOf="@+id/txtWidthQuad"
             android:text="Area" />
 
         <TextView
-            android:id="@+id/lblPerimeter"
+            android:id="@+id/lblPerimeterQuad"
             android:layout_width="75dp"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/lblArea"
+            android:layout_below="@+id/lblAreaQuad"
             android:layout_marginTop="35dp"
-            android:layout_toLeftOf="@+id/txtWidth"
+            android:layout_toLeftOf="@+id/txtWidthQuad"
             android:text="Perimeter" />
 
         <Button
-            android:id="@+id/btnInformation"
+            android:id="@+id/btnInformationQuad"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
@@ -109,21 +108,21 @@
             android:text="@string/Information" />
 
         <TextView
-            android:id="@+id/lblAreaAns"
+            android:id="@+id/lblAreaAnsQuad"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignBottom="@+id/lblArea"
-            android:layout_alignLeft="@+id/txtHeight"
-            android:layout_alignRight="@+id/txtHeight"
+            android:layout_alignBottom="@+id/lblAreaQuad"
+            android:layout_alignLeft="@+id/txtHeightQuad"
+            android:layout_alignRight="@+id/txtHeightQuad"
             android:text="" />
 
         <TextView
-            android:id="@+id/lblPerimeterAns"
+            android:id="@+id/lblPerimeterAnsQuad"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignBottom="@+id/lblPerimeter"
-            android:layout_alignLeft="@+id/lblAreaAns"
-            android:layout_alignRight="@+id/lblAreaAns"
+            android:layout_alignBottom="@+id/lblPerimeterQuad"
+            android:layout_alignLeft="@+id/lblAreaAnsQuad"
+            android:layout_alignRight="@+id/lblAreaAnsQuad"
             android:text="" />
     </RelativeLayout>
 

@@ -1,4 +1,7 @@
 package fi.metropolia.VIOPE.physixlib;
+
+import fi.metropolia.VIOPE.exception.NegativeException;
+
 /**
  *
  * @author duyb
@@ -15,11 +18,12 @@ public class Pyramid {
      * @param baseside3 base-side
      * @param height pyramid
      * Constructor
+     * @throws NegativeException 
      */
     public Pyramid(float baseside1, float baseside2,
-            float baseside3, float height) {
+            float baseside3, float height) throws NegativeException {
     	if (baseside1 <=0 || baseside2 <=0  || baseside3 <=0 || height <=0 )
-    		throw new IllegalArgumentException("Three base sides and height must be positive");
+    		throw new NegativeException("Three base sides and height must be positive");
         this.baseside1 = baseside1;
         this.baseside2 = baseside2;
         this.baseside3 = baseside3;
