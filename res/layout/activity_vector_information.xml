@@ -131,7 +131,7 @@
         android:layout_alignParentBottom="true"
         android:layout_alignRight="@+id/btnCalculateVectorInformation"
         android:layout_marginBottom="32dp"
-        android:onclick="OnClickDialog"
+        android:onClick="onClickDialog"
         android:text="Information" />
 
     <TextView

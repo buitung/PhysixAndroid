@@ -76,7 +76,7 @@
         android:layout_alignRight="@+id/btnCalculateVectorProduct"
         android:layout_below="@+id/lblProductAnsVectorProduct"
         android:layout_marginTop="30dp"
-        android:onclick="OnClickDialog"
+        android:onClick="onClickDialog"
         android:text="Information" />
 
     <TextView

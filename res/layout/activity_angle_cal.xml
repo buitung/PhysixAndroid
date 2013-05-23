@@ -126,7 +126,7 @@
         android:layout_alignLeft="@+id/lblTanAngleCal"
         android:layout_alignRight="@+id/lblTrigonometryFunction"
         android:layout_below="@+id/lblTanAngleCal"
-        android:onclick="OnClickDialog"
+        android:onClick="onClickDialog"
         android:text="Information" />
 
     <Button

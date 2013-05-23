@@ -150,7 +150,7 @@
         android:layout_alignRight="@+id/btnCalculateVectorSubtract"
         android:layout_below="@+id/lblVectorSubtractAnsVectorSubtract"
         android:layout_marginTop="30dp"
-        android:onclick="OnClickDialog"
+        android:onClick="onClickDialog"
         android:text="Information" />
 
     <TextView

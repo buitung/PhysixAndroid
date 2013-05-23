@@ -180,7 +180,7 @@
         android:layout_alignRight="@+id/btnCalculateVectorAdd"
         android:layout_below="@+id/lblVectorSumVectorAdd"
         android:layout_marginTop="30dp"
-        android:onclick="OnClickDialog"
+        android:onClick="onClickDialog"
         android:text="Information" />
 
 </RelativeLayout>
