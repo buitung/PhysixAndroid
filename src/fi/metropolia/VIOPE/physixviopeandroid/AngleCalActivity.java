@@ -25,7 +25,7 @@ public class AngleCalActivity extends Activity {
 	public void onClickDialog(View view) {
 		Dialog dialog = new Dialog(this);
 		dialog.setContentView(R.layout.dialog);
-		dialog.setTitle("Circle Information");
+		dialog.setTitle("Information");
 		TextView text = (TextView) dialog.findViewById(R.id.textContent);
 		text.setText("In geometry, an angle is the figure formed by two rays, "
 				+ "called the sides of the angle, sharing a common endpoint, called"

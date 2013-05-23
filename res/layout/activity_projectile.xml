@@ -102,6 +102,7 @@
         android:layout_alignRight="@+id/btnCalculateProjectile"
         android:layout_below="@+id/lblAirTime"
         android:layout_marginTop="25dp"
+        android:onclick="OnClickDialog"
         android:text="Information" />
 
     <TextView

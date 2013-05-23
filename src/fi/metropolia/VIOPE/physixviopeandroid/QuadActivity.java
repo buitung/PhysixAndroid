@@ -73,7 +73,7 @@ public class QuadActivity extends Activity {
 	public void onClickDialog(View view) {
 		Dialog dialog = new Dialog(this);
 		dialog.setContentView(R.layout.dialog);
-		dialog.setTitle("Circle Information");
+		dialog.setTitle("Information");
 		TextView text = (TextView) dialog.findViewById(R.id.textContent);
 		text.setText("A quad is one of the basic shapes in geometry. "
 				+ "It is a polygon with four corners or vertices "

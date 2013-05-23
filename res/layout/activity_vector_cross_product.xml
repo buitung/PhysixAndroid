@@ -150,6 +150,7 @@
         android:layout_alignRight="@+id/btnCalculateVectorCrossProduct"
         android:layout_below="@+id/lblVectorAnsCrossProduct"
         android:layout_marginTop="30dp"
+        android:onclick="OnClickDialog"
         android:text="Information" />
 
     <TextView

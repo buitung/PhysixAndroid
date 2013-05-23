@@ -140,6 +140,7 @@
         android:layout_alignRight="@+id/btnCalculateVectorDistance"
         android:layout_below="@+id/lblDistanceAnswerVectorDistance"
         android:layout_marginTop="30dp"
+        android:onclick="OnClickDialog"
         android:text="Information" />
 
     <TextView

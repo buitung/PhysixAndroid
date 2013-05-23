@@ -71,7 +71,7 @@ public class SphereActivity extends Activity {
 	public void onClickDialog(View view) {
 		Dialog dialog = new Dialog(this);
 		dialog.setContentView(R.layout.dialog);
-		dialog.setTitle("Circle Information");
+		dialog.setTitle("Information");
 		TextView text = (TextView) dialog.findViewById(R.id.textContent);
 		text.setText("A sphere is a perfectly round geometrical"
 				+ " and circular object in three-dimensional space."

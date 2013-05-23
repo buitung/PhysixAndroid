@@ -74,7 +74,7 @@ public class BrickActivity extends Activity {
 	public void onClickDialog(View view) {
 		Dialog dialog = new Dialog(this);
 		dialog.setContentView(R.layout.dialog);
-		dialog.setTitle("Circle Information");
+		dialog.setTitle("Information");
 		TextView text = (TextView) dialog.findViewById(R.id.textContent);
 		text.setText("A brick is a cubic object in geometry. "
 				+ "It has twelve edges, eight corners and six faces. "

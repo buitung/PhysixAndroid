@@ -88,7 +88,7 @@ public class PyramidActivity extends Activity {
 	public void onClickDialog(View view) {
 		Dialog dialog = new Dialog(this);
 		dialog.setContentView(R.layout.dialog);
-		dialog.setTitle("Circle Information");
+		dialog.setTitle("Information");
 		TextView text = (TextView) dialog.findViewById(R.id.textContent);
 		text.setText("Pyramid is a structure whose shape is roughly "
 				+ "that of a pyramid in the geometric sense. "

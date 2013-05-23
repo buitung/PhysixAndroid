@@ -140,6 +140,7 @@
         android:layout_alignRight="@+id/btnCalculateVectorDotProduct"
         android:layout_below="@+id/lblDotProductAnsVectorDotProduct"
         android:layout_marginTop="30dp"
+        android:onclick="OnClickDialog"
         android:text="Information" />
 
     <TextView

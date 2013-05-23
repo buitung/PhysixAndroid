@@ -74,6 +74,7 @@
         android:layout_alignRight="@+id/btnCalculateSideCalculation"
         android:layout_below="@+id/lblAirTimeAnsProj"
         android:layout_marginTop="33dp"
+        android:onclick="OnClickDialog"
         android:text="Information" />
 
     <TextView

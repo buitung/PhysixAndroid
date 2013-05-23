@@ -71,7 +71,7 @@ public class CircleActivity extends Activity {
 	public void onClickDialog(View view) {
 		Dialog dialog = new Dialog(this);
 		dialog.setContentView(R.layout.dialog);
-		dialog.setTitle("Circle Information");
+		dialog.setTitle("Information");
 		TextView text = (TextView) dialog.findViewById(R.id.textContent);
 		text.setText("A circle is a set of points in a plane that are a given distance from a given point, the center. "
 				+ "The distance between any of the points and the center is called the radius."

@@ -150,6 +150,7 @@
         android:layout_alignRight="@+id/btnCalculateVectorAngle"
         android:layout_below="@+id/lblAngleAnsVectorAngle"
         android:layout_marginTop="30dp"
+        android:onclick="OnClickDialog"
         android:text="Information" />
 
     <TextView
