@@ -100,13 +100,12 @@
 
     <EditText
         android:id="@+id/txtAngleAngleCalculation"
-        android:layout_width="100dp"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_above="@+id/btnCalculateAngleCalculation"
         android:layout_alignLeft="@+id/textView1"
-        android:layout_toLeftOf="@+id/btnAngleConvertAngleCalculation"
         android:ems="10"
-        android:hint="Angle in deg/rad"
+        android:hint="Angle"
         android:inputType="numberDecimal" />
 
     <Button
@@ -117,6 +116,7 @@
         android:layout_alignParentRight="true"
         android:layout_below="@+id/textView2"
         android:layout_marginTop="22dp"
+        android:onClick="convertDegAndRad"
         android:text="Deg - Rad" />
 
     <Button
@@ -137,6 +137,16 @@
         android:layout_alignRight="@+id/btnAngleConvertAngleCalculation"
         android:layout_below="@+id/btnAngleConvertAngleCalculation"
         android:layout_marginTop="19dp"
+        android:onClick="calculate"
         android:text="Calculate" />
+
+    <TextView
+        android:id="@+id/lblDegreeRadianAngleCal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtAngleAngleCalculation"
+        android:layout_alignBottom="@+id/txtAngleAngleCalculation"
+        android:layout_toLeftOf="@+id/btnAngleConvertAngleCalculation"
+        android:text="Degree" />
 
 </RelativeLayout>
