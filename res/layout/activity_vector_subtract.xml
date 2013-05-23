@@ -28,7 +28,7 @@
         android:textSize="13sp" />
 
     <TextView
-        android:id="@+id/lblDistanceProj"
+        android:id="@+id/lblVector1VectorSubtract"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/textView1"
@@ -38,11 +38,11 @@
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <TextView
-        android:id="@+id/lblHeightProj"
+        android:id="@+id/lblVector2VectorSubtract"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/lblDistanceProj"
-        android:layout_below="@+id/lblDistanceProj"
+        android:layout_alignLeft="@+id/lblVector1VectorSubtract"
+        android:layout_below="@+id/lblVector1VectorSubtract"
         android:layout_marginTop="24dp"
         android:text="Vector"
         android:textAppearance="?android:attr/textAppearanceLarge" />
@@ -51,7 +51,7 @@
         android:id="@+id/txtVectorYVectorSubtract1"
         android:layout_width="60dp"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/lblHeightProj"
+        android:layout_above="@+id/lblVector2VectorSubtract"
         android:layout_toRightOf="@+id/txtVectorXVectorSubtract1"
         android:ems="10"
         android:hint="y"
@@ -72,9 +72,9 @@
         android:id="@+id/txtVectorXVectorSubtract1"
         android:layout_width="60dp"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/lblHeightProj"
+        android:layout_above="@+id/lblVector2VectorSubtract"
         android:layout_marginLeft="15dp"
-        android:layout_toRightOf="@+id/lblDistanceProj"
+        android:layout_toRightOf="@+id/lblVector1VectorSubtract"
         android:ems="10"
         android:hint="x"
         android:inputType="numberSigned" />
@@ -83,7 +83,7 @@
         android:id="@+id/txtVectorXVectorSubtract2"
         android:layout_width="60dp"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/lblHeightProj"
+        android:layout_alignBottom="@+id/lblVector2VectorSubtract"
         android:layout_alignLeft="@+id/txtVectorXVectorSubtract1"
         android:ems="10"
         android:hint="x"
@@ -116,14 +116,14 @@
         android:id="@+id/btnCalculateVectorSubtract"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/lblHeightProj"
+        android:layout_alignLeft="@+id/lblVector2VectorSubtract"
         android:layout_alignRight="@+id/textView2"
-        android:layout_below="@+id/lblHeightProj"
+        android:layout_below="@+id/lblVector2VectorSubtract"
         android:layout_marginTop="38dp"
         android:text="Calculate" />
 
     <TextView
-        android:id="@+id/lblDistanceAnsProj"
+        android:id="@+id/lblVectorSubtractionlblVectorSubtract"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/btnCalculateVectorSubtract"
@@ -136,8 +136,8 @@
         android:id="@+id/lblSubtractXVectorSubtract"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/lblAirTime"
-        android:layout_alignBottom="@+id/lblAirTime"
+        android:layout_alignBaseline="@+id/lblVectorSubtractAnsVectorSubtract"
+        android:layout_alignBottom="@+id/lblVectorSubtractAnsVectorSubtract"
         android:layout_alignLeft="@+id/txtVectorXVectorSubtract2"
         android:layout_toLeftOf="@+id/txtVectorYVectorSubtract2"
         android:text="   " />
@@ -146,18 +146,18 @@
         android:id="@+id/btnInfoVectorSubtract"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/lblAirTime"
+        android:layout_alignLeft="@+id/lblVectorSubtractAnsVectorSubtract"
         android:layout_alignRight="@+id/btnCalculateVectorSubtract"
-        android:layout_below="@+id/lblAirTime"
+        android:layout_below="@+id/lblVectorSubtractAnsVectorSubtract"
         android:layout_marginTop="30dp"
         android:text="Information" />
 
     <TextView
-        android:id="@+id/lblAirTime"
+        android:id="@+id/lblVectorSubtractAnsVectorSubtract"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/lblDistanceAnsProj"
-        android:layout_below="@+id/lblDistanceAnsProj"
+        android:layout_alignLeft="@+id/lblVectorSubtractionlblVectorSubtract"
+        android:layout_below="@+id/lblVectorSubtractionlblVectorSubtract"
         android:layout_marginTop="36dp"
         android:text="Vector"
         android:textAppearance="?android:attr/textAppearanceLarge" />
@@ -166,8 +166,8 @@
         android:id="@+id/lblSubtractYVectorSubtract"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/lblAirTime"
-        android:layout_alignBottom="@+id/lblAirTime"
+        android:layout_alignBaseline="@+id/lblVectorSubtractAnsVectorSubtract"
+        android:layout_alignBottom="@+id/lblVectorSubtractAnsVectorSubtract"
         android:layout_alignLeft="@+id/txtVectorYVectorSubtract2"
         android:layout_alignRight="@+id/txtVectorYVectorSubtract2"
         android:text="   " />

@@ -28,7 +28,7 @@
         android:textSize="13sp" />
 
     <TextView
-        android:id="@+id/lblDistanceProj"
+        android:id="@+id/lblVectorVectorInformation"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/textView1"
@@ -52,9 +52,9 @@
         android:id="@+id/lblVectorXVectorInformation1"
         android:layout_width="60dp"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/lblDistanceProj"
+        android:layout_alignBottom="@+id/lblVectorVectorInformation"
         android:layout_marginLeft="21dp"
-        android:layout_toRightOf="@+id/lblDistanceProj"
+        android:layout_toRightOf="@+id/lblVectorVectorInformation"
         android:ems="10"
         android:hint="x"
         android:inputType="numberSigned" >
@@ -74,21 +74,21 @@
         android:inputType="numberSigned" />
 
     <TextView
-        android:id="@+id/TextView01"
+        android:id="@+id/lblVectorAnsVectorInformation"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/lblHeightProj"
+        android:layout_below="@+id/lblVectorNormalizedLabelVectorInformation"
         android:layout_marginTop="45dp"
         android:layout_toLeftOf="@+id/lblVectorXVectorInformation1"
         android:text="Vector"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <TextView
-        android:id="@+id/lblHeightProj"
+        android:id="@+id/lblVectorNormalizedLabelVectorInformation"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/TextView01"
-        android:layout_below="@+id/lblDistanceProj"
+        android:layout_alignLeft="@+id/lblVectorAnsVectorInformation"
+        android:layout_below="@+id/lblVectorVectorInformation"
         android:layout_marginTop="105dp"
         android:text="Normalized vector"
         android:textAppearance="?android:attr/textAppearanceLarge" />
@@ -97,18 +97,18 @@
         android:id="@+id/btnCalculateVectorInformation"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/lblHeightProj"
+        android:layout_alignLeft="@+id/lblVectorNormalizedLabelVectorInformation"
         android:layout_alignRight="@+id/textView2"
-        android:layout_below="@+id/lblDistanceProj"
+        android:layout_below="@+id/lblVectorVectorInformation"
         android:layout_marginTop="36dp"
         android:text="Calculate" />
 
     <TextView
-        android:id="@+id/lblAirTime"
+        android:id="@+id/lblVectorMagnitudeLabelVectorInformation"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/TextView01"
-        android:layout_below="@+id/TextView01"
+        android:layout_alignLeft="@+id/lblVectorAnsVectorInformation"
+        android:layout_below="@+id/lblVectorAnsVectorInformation"
         android:layout_marginTop="29dp"
         android:text="Magnitude"
         android:textAppearance="?android:attr/textAppearanceLarge" />
@@ -117,8 +117,8 @@
         android:id="@+id/lblMagnitudeVectorInformation"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/lblAirTime"
-        android:layout_alignBottom="@+id/lblAirTime"
+        android:layout_alignBaseline="@+id/lblVectorMagnitudeLabelVectorInformation"
+        android:layout_alignBottom="@+id/lblVectorMagnitudeLabelVectorInformation"
         android:layout_alignLeft="@+id/textView2"
         android:layout_alignRight="@+id/btnInfoVectorInformation"
         android:text="  " />
@@ -127,7 +127,7 @@
         android:id="@+id/btnInfoVectorInformation"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/lblAirTime"
+        android:layout_alignLeft="@+id/lblVectorMagnitudeLabelVectorInformation"
         android:layout_alignParentBottom="true"
         android:layout_alignRight="@+id/btnCalculateVectorInformation"
         android:layout_marginBottom="32dp"
@@ -137,7 +137,7 @@
         android:id="@+id/lblNormalizedXVectorInformation"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/lblAirTime"
+        android:layout_above="@+id/lblVectorMagnitudeLabelVectorInformation"
         android:layout_alignLeft="@+id/lblVectorXVectorInformation1"
         android:layout_toLeftOf="@+id/lblVectorYVectorInformation1"
         android:text="  " />

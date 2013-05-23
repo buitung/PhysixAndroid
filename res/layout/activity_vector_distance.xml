@@ -28,7 +28,7 @@
         android:textSize="13sp" />
 
     <TextView
-        android:id="@+id/lblDistanceProj"
+        android:id="@+id/lblVector1VectorDistance"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/textView1"
@@ -38,11 +38,11 @@
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <TextView
-        android:id="@+id/lblHeightProj"
+        android:id="@+id/lblVector2VectorDistance"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/lblDistanceProj"
-        android:layout_below="@+id/lblDistanceProj"
+        android:layout_alignLeft="@+id/lblVector1VectorDistance"
+        android:layout_below="@+id/lblVector1VectorDistance"
         android:layout_marginTop="24dp"
         android:text="Vector"
         android:textAppearance="?android:attr/textAppearanceLarge" />
@@ -51,7 +51,7 @@
         android:id="@+id/txtVectorYVectorDistance1"
         android:layout_width="60dp"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/lblHeightProj"
+        android:layout_above="@+id/lblVector2VectorDistance"
         android:layout_toRightOf="@+id/txtVectorXVectorDistance1"
         android:ems="10"
         android:hint="y"
@@ -72,9 +72,9 @@
         android:id="@+id/txtVectorXVectorDistance1"
         android:layout_width="60dp"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/lblHeightProj"
+        android:layout_above="@+id/lblVector2VectorDistance"
         android:layout_marginLeft="15dp"
-        android:layout_toRightOf="@+id/lblDistanceProj"
+        android:layout_toRightOf="@+id/lblVector1VectorDistance"
         android:ems="10"
         android:hint="x"
         android:inputType="numberSigned" />
@@ -83,7 +83,7 @@
         android:id="@+id/txtVectorXVectorDistance2"
         android:layout_width="60dp"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/lblHeightProj"
+        android:layout_alignBottom="@+id/lblVector2VectorDistance"
         android:layout_alignLeft="@+id/txtVectorXVectorDistance1"
         android:ems="10"
         android:hint="x"
@@ -116,14 +116,14 @@
         android:id="@+id/btnCalculateVectorDistance"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/lblHeightProj"
+        android:layout_alignLeft="@+id/lblVector2VectorDistance"
         android:layout_alignRight="@+id/textView2"
-        android:layout_below="@+id/lblHeightProj"
+        android:layout_below="@+id/lblVector2VectorDistance"
         android:layout_marginTop="38dp"
         android:text="Calculate" />
 
     <TextView
-        android:id="@+id/lblDistanceAnsProj"
+        android:id="@+id/lblDistanceAnsVectorDistance"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/btnCalculateVectorDistance"
@@ -136,18 +136,18 @@
         android:id="@+id/btnInfoVectorDistance"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/lblAirTime"
+        android:layout_alignLeft="@+id/lblDistanceAnswerVectorDistance"
         android:layout_alignRight="@+id/btnCalculateVectorDistance"
-        android:layout_below="@+id/lblAirTime"
+        android:layout_below="@+id/lblDistanceAnswerVectorDistance"
         android:layout_marginTop="30dp"
         android:text="Information" />
 
     <TextView
-        android:id="@+id/lblAirTime"
+        android:id="@+id/lblDistanceAnswerVectorDistance"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/lblDistanceAnsProj"
-        android:layout_below="@+id/lblDistanceAnsProj"
+        android:layout_alignLeft="@+id/lblDistanceAnsVectorDistance"
+        android:layout_below="@+id/lblDistanceAnsVectorDistance"
         android:layout_marginTop="36dp"
         android:text="Distance"
         android:textAppearance="?android:attr/textAppearanceLarge" />
@@ -156,8 +156,8 @@
         android:id="@+id/lblDistanceVectorDistance"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/lblAirTime"
-        android:layout_alignBottom="@+id/lblAirTime"
+        android:layout_alignBaseline="@+id/lblDistanceAnswerVectorDistance"
+        android:layout_alignBottom="@+id/lblDistanceAnswerVectorDistance"
         android:layout_alignLeft="@+id/textView2"
         android:layout_alignRight="@+id/btnInfoVectorDistance"
         android:text="  " />

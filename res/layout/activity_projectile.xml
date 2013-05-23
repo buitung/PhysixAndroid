@@ -28,7 +28,7 @@
         android:textSize="13sp" />
 
     <EditText
-        android:id="@+id/txtInitialVelocity"
+        android:id="@+id/txtX1VectorAngle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/textView1"
@@ -56,9 +56,9 @@
         android:id="@+id/txtAngleProj"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/txtInitialVelocity"
-        android:layout_alignRight="@+id/txtInitialVelocity"
-        android:layout_below="@+id/txtInitialVelocity"
+        android:layout_alignLeft="@+id/txtX1VectorAngle"
+        android:layout_alignRight="@+id/txtX1VectorAngle"
+        android:layout_below="@+id/txtX1VectorAngle"
         android:layout_marginTop="16dp"
         android:ems="10"
         android:hint="Initial angle"
@@ -120,7 +120,7 @@
         android:layout_height="wrap_content"
         android:layout_alignBaseline="@+id/lblHeightProj"
         android:layout_alignBottom="@+id/lblHeightProj"
-        android:layout_alignRight="@+id/btnInformationProjectile"
+        android:layout_alignRight="@+id/btnInformationVectorAngle"
         android:layout_toRightOf="@+id/textView1"
         android:text="" />
 
@@ -131,7 +131,7 @@
         android:layout_alignBaseline="@+id/lblAirTime"
         android:layout_alignBottom="@+id/lblAirTime"
         android:layout_alignLeft="@+id/lblHeightAnsProj"
-        android:layout_alignRight="@+id/btnInformationProjectile"
+        android:layout_alignRight="@+id/btnInformationVectorAngle"
         android:text="" />
 
 </RelativeLayout>

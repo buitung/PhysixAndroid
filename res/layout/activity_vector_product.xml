@@ -28,7 +28,7 @@
         android:textSize="13sp" />
 
     <TextView
-        android:id="@+id/lblDistanceProj"
+        android:id="@+id/lblVectorVectorProduct"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/textView1"
@@ -49,7 +49,7 @@
         android:inputType="numberSigned" />
 
     <TextView
-        android:id="@+id/lblDistanceAnsProj"
+        android:id="@+id/lblProductLabelVectorProduct"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/btnCalculateVectorProduct"
@@ -62,28 +62,28 @@
         android:id="@+id/lblProductXVectorProduct"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/lblAirTime"
-        android:layout_alignBottom="@+id/lblAirTime"
+        android:layout_alignBaseline="@+id/lblProductAnsVectorProduct"
+        android:layout_alignBottom="@+id/lblProductAnsVectorProduct"
         android:layout_alignLeft="@+id/txtVectorXVectorProduct1"
         android:layout_alignRight="@+id/txtVectorXVectorProduct1"
         android:text="  " />
 
     <Button
-        android:id="@+id/btnInformationProjectile"
+        android:id="@+id/btnInformationVectorProduct"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/lblAirTime"
+        android:layout_alignLeft="@+id/lblProductAnsVectorProduct"
         android:layout_alignRight="@+id/btnCalculateVectorProduct"
-        android:layout_below="@+id/lblAirTime"
+        android:layout_below="@+id/lblProductAnsVectorProduct"
         android:layout_marginTop="30dp"
         android:text="Information" />
 
     <TextView
-        android:id="@+id/lblAirTime"
+        android:id="@+id/lblProductAnsVectorProduct"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/lblDistanceAnsProj"
-        android:layout_below="@+id/lblDistanceAnsProj"
+        android:layout_alignLeft="@+id/lblProductLabelVectorProduct"
+        android:layout_below="@+id/lblProductLabelVectorProduct"
         android:layout_marginTop="36dp"
         android:text="Vector"
         android:textAppearance="?android:attr/textAppearanceLarge" />
@@ -94,7 +94,7 @@
         android:layout_height="wrap_content"
         android:layout_above="@+id/btnCalculateVectorProduct"
         android:layout_marginLeft="17dp"
-        android:layout_toRightOf="@+id/lblDistanceProj"
+        android:layout_toRightOf="@+id/lblVectorVectorProduct"
         android:ems="10"
         android:hint="x"
         android:inputType="numberSigned" >
@@ -116,9 +116,9 @@
         android:id="@+id/btnCalculateVectorProduct"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/lblDistanceProj"
+        android:layout_alignLeft="@+id/lblVectorVectorProduct"
         android:layout_alignRight="@+id/textView2"
-        android:layout_below="@+id/lblDistanceProj"
+        android:layout_below="@+id/lblVectorVectorProduct"
         android:layout_marginTop="56dp"
         android:text="Calculate" />
 
@@ -128,7 +128,7 @@
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/btnCalculateVectorProduct"
         android:layout_alignRight="@+id/btnCalculateVectorProduct"
-        android:layout_below="@+id/lblDistanceProj"
+        android:layout_below="@+id/lblVectorVectorProduct"
         android:layout_marginTop="14dp"
         android:ems="10"
         android:hint="Number to be multiplied"

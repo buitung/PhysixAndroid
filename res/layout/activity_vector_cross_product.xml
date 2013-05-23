@@ -28,7 +28,7 @@
         android:textSize="13sp" />
 
     <TextView
-        android:id="@+id/lblDistanceProj"
+        android:id="@+id/lblVector1CrossProduct"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/textView1"
@@ -38,11 +38,11 @@
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <TextView
-        android:id="@+id/lblHeightProj"
+        android:id="@+id/lblVector2CrossProduct"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/lblDistanceProj"
-        android:layout_below="@+id/lblDistanceProj"
+        android:layout_alignLeft="@+id/lblVector1CrossProduct"
+        android:layout_below="@+id/lblVector1CrossProduct"
         android:layout_marginTop="24dp"
         android:text="Vector"
         android:textAppearance="?android:attr/textAppearanceLarge" />
@@ -51,7 +51,7 @@
         android:id="@+id/txtVectorYVectorCrossProduct1"
         android:layout_width="60dp"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/lblHeightProj"
+        android:layout_above="@+id/lblVector2CrossProduct"
         android:layout_toRightOf="@+id/txtVectorXVectorCrossProduct1"
         android:ems="10"
         android:hint="y"
@@ -72,9 +72,9 @@
         android:id="@+id/txtVectorXVectorCrossProduct1"
         android:layout_width="60dp"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/lblHeightProj"
+        android:layout_above="@+id/lblVector2CrossProduct"
         android:layout_marginLeft="15dp"
-        android:layout_toRightOf="@+id/lblDistanceProj"
+        android:layout_toRightOf="@+id/lblVector1CrossProduct"
         android:ems="10"
         android:hint="x"
         android:inputType="numberSigned" />
@@ -83,7 +83,7 @@
         android:id="@+id/txtVectorXVectorCrossProduct2"
         android:layout_width="60dp"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/lblHeightProj"
+        android:layout_alignBottom="@+id/lblVector2CrossProduct"
         android:layout_alignLeft="@+id/txtVectorXVectorCrossProduct1"
         android:ems="10"
         android:hint="x"
@@ -116,14 +116,14 @@
         android:id="@+id/btnCalculateVectorCrossProduct"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/lblHeightProj"
+        android:layout_alignLeft="@+id/lblVector2CrossProduct"
         android:layout_alignRight="@+id/textView2"
-        android:layout_below="@+id/lblHeightProj"
+        android:layout_below="@+id/lblVector2CrossProduct"
         android:layout_marginTop="38dp"
         android:text="Calculate" />
 
     <TextView
-        android:id="@+id/lblDistanceAnsProj"
+        android:id="@+id/lblCrossProductAns"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/btnCalculateVectorCrossProduct"
@@ -136,28 +136,28 @@
         android:id="@+id/lblCrossProductXVectorCrossProdct"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/lblAirTime"
-        android:layout_alignBottom="@+id/lblAirTime"
+        android:layout_alignBaseline="@+id/lblVectorAnsCrossProduct"
+        android:layout_alignBottom="@+id/lblVectorAnsCrossProduct"
         android:layout_alignLeft="@+id/txtVectorXVectorCrossProduct2"
         android:layout_toLeftOf="@+id/txtVectorYVectorCrossProduct2"
         android:text="  " />
 
     <Button
-        android:id="@+id/btnInformationProjectile"
+        android:id="@+id/btnInformationVectorCrossProduct"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/lblAirTime"
+        android:layout_alignLeft="@+id/lblVectorAnsCrossProduct"
         android:layout_alignRight="@+id/btnCalculateVectorCrossProduct"
-        android:layout_below="@+id/lblAirTime"
+        android:layout_below="@+id/lblVectorAnsCrossProduct"
         android:layout_marginTop="30dp"
         android:text="Information" />
 
     <TextView
-        android:id="@+id/lblAirTime"
+        android:id="@+id/lblVectorAnsCrossProduct"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/lblDistanceAnsProj"
-        android:layout_below="@+id/lblDistanceAnsProj"
+        android:layout_alignLeft="@+id/lblCrossProductAns"
+        android:layout_below="@+id/lblCrossProductAns"
         android:layout_marginTop="36dp"
         android:text="Vector"
         android:textAppearance="?android:attr/textAppearanceLarge" />
@@ -166,8 +166,8 @@
         android:id="@+id/lblCrossProductYVectorCrossProdct"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/lblAirTime"
-        android:layout_alignBottom="@+id/lblAirTime"
+        android:layout_alignBaseline="@+id/lblVectorAnsCrossProduct"
+        android:layout_alignBottom="@+id/lblVectorAnsCrossProduct"
         android:layout_alignLeft="@+id/txtVectorYVectorCrossProduct2"
         android:layout_alignRight="@+id/txtVectorYVectorCrossProduct2"
         android:text="  " />

@@ -28,21 +28,21 @@
         android:textSize="13sp" />
 
     <TextView
-        android:id="@+id/lblHeightProj"
+        android:id="@+id/lblCosAngleCal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/lblDistanceProj"
-        android:layout_below="@+id/lblDistanceProj"
+        android:layout_alignLeft="@+id/lblSinAngleCal"
+        android:layout_below="@+id/lblSinAngleCal"
         android:layout_marginTop="28dp"
         android:text="Cos"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <TextView
-        android:id="@+id/lblDistanceAnsProj"
+        android:id="@+id/lblTanAngleCal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/lblHeightProj"
-        android:layout_below="@+id/lblHeightProj"
+        android:layout_alignLeft="@+id/lblCosAngleCal"
+        android:layout_below="@+id/lblCosAngleCal"
         android:layout_marginTop="30dp"
         android:text="Tan"
         android:textAppearance="?android:attr/textAppearanceLarge" />
@@ -51,8 +51,8 @@
         android:id="@+id/lblSinAngleCalculation"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/lblDistanceProj"
-        android:layout_alignBottom="@+id/lblDistanceProj"
+        android:layout_alignBaseline="@+id/lblSinAngleCal"
+        android:layout_alignBottom="@+id/lblSinAngleCal"
         android:layout_alignLeft="@+id/textView2"
         android:layout_alignRight="@+id/lblTrigonometryFunction"
         android:text="" />
@@ -61,8 +61,8 @@
         android:id="@+id/lblCosAngleCalculation"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/lblHeightProj"
-        android:layout_alignBottom="@+id/lblHeightProj"
+        android:layout_alignBaseline="@+id/lblCosAngleCal"
+        android:layout_alignBottom="@+id/lblCosAngleCal"
         android:layout_alignLeft="@+id/lblSinAngleCalculation"
         android:layout_alignRight="@+id/lblSinAngleCalculation"
         android:text="" />
@@ -71,14 +71,14 @@
         android:id="@+id/lblTanAngleCalculation"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/lblDistanceAnsProj"
-        android:layout_alignBottom="@+id/lblDistanceAnsProj"
+        android:layout_alignBaseline="@+id/lblTanAngleCal"
+        android:layout_alignBottom="@+id/lblTanAngleCal"
         android:layout_alignLeft="@+id/lblCosAngleCalculation"
         android:layout_alignRight="@+id/btnInfoAngleCalculation"
         android:text="" />
 
     <TextView
-        android:id="@+id/lblDistanceProj"
+        android:id="@+id/lblSinAngleCal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/btnCalculateAngleCalculation"
@@ -123,9 +123,9 @@
         android:id="@+id/btnInfoAngleCalculation"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/lblDistanceAnsProj"
+        android:layout_alignLeft="@+id/lblTanAngleCal"
         android:layout_alignRight="@+id/lblTrigonometryFunction"
-        android:layout_below="@+id/lblDistanceAnsProj"
+        android:layout_below="@+id/lblTanAngleCal"
         android:text="Information" />
 
     <Button
