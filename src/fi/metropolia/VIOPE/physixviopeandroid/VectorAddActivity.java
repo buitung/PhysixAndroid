@@ -1,11 +1,17 @@
 package fi.metropolia.VIOPE.physixviopeandroid;
 
-import android.os.Bundle;
 import android.app.Activity;
 import android.app.Dialog;
+import android.content.Context;
+import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
+import fi.metropolia.VIOPE.exception.NegativeException;
+import fi.metropolia.VIOPE.exception.ParsingException;
+import fi.metropolia.VIOPE.physixlib.Vector;
 
 public class VectorAddActivity extends Activity {
 
@@ -20,6 +26,51 @@ public class VectorAddActivity extends Activity {
 		// Inflate the menu; this adds items to the action bar if it is present.
 		getMenuInflater().inflate(R.menu.vector_add, menu);
 		return true;
+	}
+
+	public void calculate(View view) throws NegativeException, ParsingException {
+		float x1 = 0, x2 = 0, y1 = 0, y2 = 0, z1 = 0, z2 = 0;
+		try {
+			try {
+				EditText editText = (EditText) findViewById(R.id.txtVectorXVectorAdd1);
+				x1 = Float.parseFloat(editText.getText().toString());
+				editText = (EditText) findViewById(R.id.txtVectorYVectorAdd1);
+				y1 = Float.parseFloat(editText.getText().toString());
+				editText = (EditText) findViewById(R.id.txtVectorZVectorAdd1);
+				z1 = Float.parseFloat(editText.getText().toString());
+				editText = (EditText) findViewById(R.id.txtVectorXVectorAdd2);
+				x1 = Float.parseFloat(editText.getText().toString());
+				editText = (EditText) findViewById(R.id.txtVectorYVectorAdd2);
+				y1 = Float.parseFloat(editText.getText().toString());
+				editText = (EditText) findViewById(R.id.txtVectorZVectorAdd2);
+				z1 = Float.parseFloat(editText.getText().toString());
+			} catch (Exception e) {
+				throw new ParsingException(
+						"Please enter inputs in the right form");
+			}
+			Vector vector1 = new Vector(x1, y1, z1);
+			Vector vector2 = new Vector(x2, y2, z2);
+			vector1.AddVec(vector2);
+			TextView txtView = (TextView) findViewById(R.id.lblVectorSumXVectorAdd);
+			txtView.setText(Float.toString(vector1.getX()));
+			txtView = (TextView) findViewById(R.id.lblVectorSumYVectorAdd);
+			txtView.setText(Float.toString((vector1.getY())));
+			txtView = (TextView) findViewById(R.id.lblVectorSumZVectorAdd);
+			txtView.setText(Float.toString((vector1.getZ())));
+
+		} catch (ParsingException e) {
+			Context context = getApplicationContext();
+			CharSequence text = e.getMessage();
+			int duration = Toast.LENGTH_LONG;
+			Toast toast = Toast.makeText(context, text, duration);
+			toast.show();
+			TextView txtView = (TextView) findViewById(R.id.lblVectorSumXVectorAdd);
+			txtView.setText("");
+			txtView = (TextView) findViewById(R.id.lblVectorSumYVectorAdd);
+			txtView.setText("");
+			txtView = (TextView) findViewById(R.id.lblVectorSumZVectorAdd);
+			txtView.setText("");
+		}
 	}
 
 	public void onClickDialog(View view) {
