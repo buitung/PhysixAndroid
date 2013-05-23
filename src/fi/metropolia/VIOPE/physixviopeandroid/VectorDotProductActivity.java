@@ -99,7 +99,7 @@ public class VectorDotProductActivity extends Activity {
 				+ "but that they may have different magnitudes and directions."
 				+ "\n\ta = a1.i + a2.j + a3.k" + "\n\tb = b1.i + b2.j + b3.k"
 				+ "\nThe dot product of a and b is"
-				+ "\n\ta.b = a1*b1 + a2*b2 + a3*b3");
+				+ "\n\ta.b = a1*b1 + a2*b2 + a3*b3\n");
 		dialog.show();
 	}
 

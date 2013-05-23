@@ -95,7 +95,7 @@ public class TriangleActivity extends Activity {
 				+ "\nA triangle of  three sides : a, b and c. "
 				+ "\nThe perimeter of the triangle" + "\n\tp = a+b+c"
 				+ "\nThe area of the triangle "
-				+ "\n\ta = SqrRoot( p*(p-a)*(p-b)*(p-c) )");
+				+ "\n\ta = SqrRoot( p/2*(p/2-a)*(p/2-b)*(p/2-c) )\n");
 		dialog.show();
 	}
 

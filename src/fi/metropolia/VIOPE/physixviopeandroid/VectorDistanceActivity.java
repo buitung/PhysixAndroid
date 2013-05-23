@@ -99,7 +99,7 @@ public class VectorDistanceActivity extends Activity {
 				+ " vectors, but that they may have different magnitudes and directions."
 				+ "\n\ta = a1.i + a2.j + a3.k" + "\n\tb = b1.i + b2.j + b3.k"
 				+ "\nThe distance between 2 vectors is: "
-				+ " \n\td = SqrRoot( (a1-b1)^2 + (a2-b2)^2 + (a3-b3)^2 )");
+				+ " \n\td = SqrRoot( (a1-b1)^2 + (a2-b2)^2 + (a3-b3)^2 )\n");
 		dialog.show();
 	}
 

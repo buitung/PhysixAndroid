@@ -78,7 +78,7 @@ public class SphereActivity extends Activity {
 				+ " and circular object in three-dimensional space."
 				+ "\nA sphere of radius r . "
 				+ "\nThe surface area of the sphere " + "\n\ta = 4*pi*r^2."
-				+ "\nThe volume of the sphere " + "\n\tv = 4*pi*r^3 /3.");
+				+ "\nThe volume of the sphere " + "\n\tv = 4*pi*r^3 /3.\n");
 		dialog.show();
 	}
 

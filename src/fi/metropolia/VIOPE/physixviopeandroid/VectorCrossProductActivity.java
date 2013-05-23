@@ -110,7 +110,7 @@ public class VectorCrossProductActivity extends Activity {
 				+ "\n\ta = a1.i + a2.j + a3.k"
 				+ "\n\tb = b1.i + b2.j + b3.k"
 				+ "\nThe cross product of a and b is: "
-				+ "\n\ta x b = (a2*b3 - a3*b2)i + (a3*b1 - a1*b3)j + (a1*b2 - b1*a2)k");
+				+ "\n\ta x b = (a2*b3 - a3*b2)i + (a3*b1 - a1*b3)j + (a1*b2 - b1*a2)k\n");
 		dialog.show();
 	}
 

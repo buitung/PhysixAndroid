@@ -84,7 +84,7 @@ public class QuadActivity extends Activity {
 				+ "\nA quad of width w and height h. "
 				+ "If w = h the quad is a square, otherwise it is a rectangular"
 				+ "\nThe area of the quad " + "\n\ta = w*h "
-				+ "\nThe perimeter of the quad " + "\n\tp = 2*w+2*h");
+				+ "\nThe perimeter of the quad " + "\n\tp = 2*w+2*h\n");
 		dialog.show();
 	}
 

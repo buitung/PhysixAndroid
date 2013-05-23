@@ -42,7 +42,7 @@ public class VectorAngleActivity extends Activity {
 				+ "an initial point A with a terminal point B.\nAssume now that a and "
 				+ "b are not necessarily equal vectors, but that they may have different "
 				+ "magnitudes and directions. \nAngle \"alpha\" between two vector can be "
-				+ "decided as\n\tcos(\"alpha\") = (a.b) / (|a|.|b|)");
+				+ "decided as\n\tcos(\"alpha\") = (a.b) / (|a|.|b|)\n");
 		dialog.show();
 	}
 

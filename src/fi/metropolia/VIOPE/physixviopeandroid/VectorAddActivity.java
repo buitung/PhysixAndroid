@@ -106,7 +106,7 @@ public class VectorAddActivity extends Activity {
 				+ "\n\ta = a1.i + a2.j + a3.k"
 				+ "\n\tb = b1.i + b2.j + b3.k"
 				+ "\nThe sum of a and b is"
-				+ "\n\ta + b = (a1+b1)i + (a2+b2)j  + (a3+b3)k");
+				+ "\n\ta + b = (a1+b1)i + (a2+b2)j  + (a3+b3)k\n");
 		dialog.show();
 	}
 }

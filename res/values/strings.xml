@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">PhysiXViopeAndroid</string>
+    <string name="app_name">PhysiX</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
     <string name="Welcome">Welcome to PhysiX</string>
@@ -10,16 +10,16 @@
     <string name="Geometry">Geometry</string>
     <string name="Projectile">Projectile</string>
     <string name="Trigonometry">Trigonometry</string>
-    <string name="title_activity_geometry">GeometryActivity</string>
+    <string name="title_activity_geometry">Geometry</string>
     <string name="Triangle">Triangle</string>
     <string name="Circle">Circle</string>
     <string name="Quad">Quad</string>
     <string name="Pyramid">Pyramid</string>
     <string name="Sphere">Sphere</string>
     <string name="Brick">Brick</string>
-    <string name="title_activity_vector">VectorActivity</string>
-    <string name="title_activity_trigonometry">TrigonometryActivity</string>
-    <string name="title_activity_projectile">ProjectileActivity</string>
+    <string name="title_activity_vector">Vector</string>
+    <string name="title_activity_trigonometry">Trygonometry</string>
+    <string name="title_activity_projectile">Projectile</string>
     <string name="Add">Add</string>
     <string name="Subtract">Subtract</string>
     <string name="Product">Product</string>
@@ -28,23 +28,23 @@
     <string name="Distance">Distance</string>
     <string name="Angle">Angle</string>
     <string name="Information">Information</string>
-    <string name="title_activity_vector_add">VectorAddActivity</string>
-    <string name="title_activity_vector_subtract">VectorSubtractActivity</string>
-    <string name="title_activity_vector_product">VectorProductActivity</string>
-    <string name="title_activity_vector_cross_product">VectorCrossProductActivity</string>
-    <string name="title_activity_vector_dot_product">VectorDotProductActivity</string>
-    <string name="title_activity_vector_distance">VectorDistanceActivity</string>
-    <string name="title_activity_vector_angle">VectorAngleActivity</string>
-    <string name="title_activity_vector_information">VectorInformationActivity</string>
-    <string name="title_activity_side_cal">SideCalActivity</string>
-    <string name="title_activity_angle_cal">AngleCalActivity</string>
-    <string name="title_activity_triangle">TriangleActivity</string>
-    <string name="title_activity_quad">QuadActivity</string>
-    <string name="title_activity_pyramid">PyramidActivity</string>
-    <string name="title_activity_brick">BrickActivity</string>
-    <string name="title_activity_circle">CircleActivity</string>
-    <string name="title_activity_sphere">SphereActivity</string>
+    <string name="title_activity_vector_add">Add two vectors</string>
+    <string name="title_activity_vector_subtract">Subtract two vectors</string>
+    <string name="title_activity_vector_product">Vector Product</string>
+    <string name="title_activity_vector_cross_product">Vector Cross Product</string>
+    <string name="title_activity_vector_dot_product">Vector Dot Product</string>
+    <string name="title_activity_vector_distance">Vector Distance</string>
+    <string name="title_activity_vector_angle">Vector Angle</string>
+    <string name="title_activity_vector_information">Vector Information</string>
+    <string name="title_activity_side_cal">Side Calculation</string>
+    <string name="title_activity_angle_cal">Angle Calculation</string>
+    <string name="title_activity_triangle">Triangle</string>
+    <string name="title_activity_quad">Quad</string>
+    <string name="title_activity_pyramid">Pyramid</string>
+    <string name="title_activity_brick">Brick</string>
+    <string name="title_activity_circle">Circle</string>
+    <string name="title_activity_sphere">Sphere</string>
     <string name="Calculate">Calculate</string>
-    <string name="title_activity_proj">ProjActivity</string>
+    <string name="title_activity_proj">Projectile</string>
 
 </resources>

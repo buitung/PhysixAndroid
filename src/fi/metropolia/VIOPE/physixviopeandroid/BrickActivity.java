@@ -82,7 +82,7 @@ public class BrickActivity extends Activity {
 				+ "\nA brick has width w, height h and length l.  "
 				+ "\nThe surface area of the brick is:  "
 				+ "\n\ta = 2*w*h + 2*w*l + 2*h*l "
-				+ "\nThe  volume of the brick is: " + "\n\tv = w*h*l.");
+				+ "\nThe  volume of the brick is: " + "\n\tv = w*h*l.\n");
 		dialog.show();
 	}
 

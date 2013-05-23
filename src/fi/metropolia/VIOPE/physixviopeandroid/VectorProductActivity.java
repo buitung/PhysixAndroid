@@ -93,7 +93,7 @@ public class VectorProductActivity extends Activity {
 				+ "\nAssume now that a is a vector:"
 				+ "\n\ta = a1.i + a2.j + a3.k"
 				+ "\nThe multiplication between a and number N is:"
-				+ "\n\tMul_a = (N*a1)i + (N*a2)j + (N*a3)k");
+				+ "\n\tMul_a = (N*a1)i + (N*a2)j + (N*a3)k\n");
 		dialog.show();
 	}
 

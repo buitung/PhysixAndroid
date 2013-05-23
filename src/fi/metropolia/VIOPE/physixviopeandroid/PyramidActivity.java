@@ -105,7 +105,7 @@ public class PyramidActivity extends Activity {
 				+ "\nThe surface area of the pyramid is"
 				+ "\n\tSurArea = baseArea + sidePerimeter*sh*0,5 "
 				+ "\nThe  volume of the pyramid is"
-				+ "\n\tv =  baseArea * h / 3");
+				+ "\n\tv =  baseArea * h / 3\n");
 		dialog.show();
 	}
 

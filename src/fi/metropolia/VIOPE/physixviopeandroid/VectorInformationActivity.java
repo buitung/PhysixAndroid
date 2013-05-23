@@ -97,7 +97,7 @@ public class VectorInformationActivity extends Activity {
 				+ "\n\ta = a1.i + a2.j + a3.k" + "\nMagnitude of vector a is: "
 				+ "\n\tMag_a = SqrRoot( a1^2 + a2^2 + a3^2 )"
 				+ "\nNormalized vector of a is:"
-				+ "\n\tNorm_a = (a1/Mag_a)i + (a2/Mag_a)j + (a3/Mag_a)k");
+				+ "\n\tNorm_a = (a1/Mag_a)i + (a2/Mag_a)j + (a3/Mag_a)k\n");
 		dialog.show();
 	}
 

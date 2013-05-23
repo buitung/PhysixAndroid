@@ -46,7 +46,7 @@ public class AngleCalActivity extends Activity {
 				+ " opposite and adjacent sides, "
 				+ "Sine, Cosine and Tangent of one angle are trigonometric functions, "
 				+ "putting in the above context:" + "\n\tSin = Opp/Hypo"
-				+ "\n\tCos = Adj/Hypo" + "\n\tTan = Opp/ Adj = Sin/Cos");
+				+ "\n\tCos = Adj/Hypo" + "\n\tTan = Opp/ Adj = Sin/Cos\n");
 		dialog.show();
 	}
 

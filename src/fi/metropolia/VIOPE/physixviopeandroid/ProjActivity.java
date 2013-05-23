@@ -47,7 +47,7 @@ public class ProjActivity extends Activity {
 				+ "\nThe projectile total air time is "
 				+ "\n\tt = 2*v*sin(alpha)/g. "
 				+ "\nThe projectile maimum achieve height is "
-				+ "\n\th = v*v*sin(alpha)*sin(alpha)/(2*g).");
+				+ "\n\th = v*v*sin(alpha)*sin(alpha)/(2*g).\n");
 		dialog.show();
 	}
 

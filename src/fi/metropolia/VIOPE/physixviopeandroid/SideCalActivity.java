@@ -51,7 +51,7 @@ public class SideCalActivity extends Activity {
 				+ "\nThe side next to the angle and not hypotenuse is adjacent side:"
 				+ "\n\tAdj = Hypo * Cos"
 				+ "\nThe side opposite to the angle is opposite side"
-				+ "\n\tOpp = Hypo * Sin");
+				+ "\n\tOpp = Hypo * Sin\n");
 		dialog.show();
 	}
 
