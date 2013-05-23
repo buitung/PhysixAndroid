@@ -10,6 +10,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 import fi.metropolia.VIOPE.exception.ParsingException;
+import fi.metropolia.VIOPE.physixlib.RoundingRounding;
 import fi.metropolia.VIOPE.physixlib.Vector;
 
 public class VectorCrossProductActivity extends Activity {
@@ -35,27 +36,47 @@ public class VectorCrossProductActivity extends Activity {
 				x1 = Float.parseFloat(editText.getText().toString());
 				editText = (EditText) findViewById(R.id.txtVectorYVectorCrossProduct1);
 				y1 = Float.parseFloat(editText.getText().toString());
-				editText = (EditText) findViewById(R.id.txtVectorZVectorCrossProduct1);
-				z1 = Float.parseFloat(editText.getText().toString());
 				editText = (EditText) findViewById(R.id.txtVectorXVectorCrossProduct2);
 				x2 = Float.parseFloat(editText.getText().toString());
 				editText = (EditText) findViewById(R.id.txtVectorYVectorCrossProduct2);
 				y2 = Float.parseFloat(editText.getText().toString());
-				editText = (EditText) findViewById(R.id.txtVectorZVectorCrossProduct2);
-				z2 = Float.parseFloat(editText.getText().toString());
 			} catch (Exception e) {
 				throw new ParsingException(
 						"Please enter inputs in the right form");
 			}
+			EditText editText = (EditText) findViewById(R.id.txtVectorZVectorCrossProduct1);
+			if (editText.getText().toString().trim().length() == 0)
+				z1 = 0;
+			else {
+				try {
+					z1 = Float.parseFloat(editText.getText().toString());
+				} catch (Exception e) {
+					throw new ParsingException(
+							"Please enter inputs in the right form");
+				}
+			}
+			editText = (EditText) findViewById(R.id.txtVectorZVectorCrossProduct2);
+			if (editText.getText().toString().trim().length() == 0)
+				z2 = 0;
+			else {
+				try {
+					z2 = Float.parseFloat(editText.getText().toString());
+				} catch (Exception e) {
+					throw new ParsingException(
+							"Please enter inputs in the right form");
+				}
+			}
+
 			Vector vector1 = new Vector(x1, y1, z1);
 			Vector vector2 = new Vector(x2, y2, z2);
-			vector1.CrossProduct(vector2);
+			Vector vector3 = vector1.CrossProduct(vector2);
 			TextView txtView = (TextView) findViewById(R.id.lblCrossProductXVectorCrossProdct);
-			txtView.setText(Float.toString(vector1.getX()));
+			txtView.setText(RoundingRounding.RRR(Float
+					.toString(vector3.getX())));
 			txtView = (TextView) findViewById(R.id.lblCrossProductYVectorCrossProdct);
-			txtView.setText(Float.toString((vector1.getY())));
+			txtView.setText(RoundingRounding.RRR(Float.toString(vector3.getY())));
 			txtView = (TextView) findViewById(R.id.lblCrossProductZVectorCrossProdct);
-			txtView.setText(Float.toString((vector1.getZ())));
+			txtView.setText(RoundingRounding.RRR(Float.toString(vector3.getZ())));
 
 		} catch (ParsingException e) {
 			Context context = getApplicationContext();

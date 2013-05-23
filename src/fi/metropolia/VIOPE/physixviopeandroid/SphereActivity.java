@@ -2,6 +2,7 @@ package fi.metropolia.VIOPE.physixviopeandroid;
 
 import fi.metropolia.VIOPE.exception.NegativeException;
 import fi.metropolia.VIOPE.exception.ParsingException;
+import fi.metropolia.VIOPE.physixlib.RoundingRounding;
 import fi.metropolia.VIOPE.physixlib.Sphere;
 import android.os.Bundle;
 import android.app.Activity;
@@ -40,9 +41,9 @@ public class SphereActivity extends Activity {
 			}
 			Sphere sphere = new Sphere(r);
 			TextView txtView = (TextView) findViewById(R.id.lblAreaAnsSphere);
-			txtView.setText(Float.toString(sphere.Area()));
+			txtView.setText(RoundingRounding.RRR(Float.toString(sphere.Area())));
 			txtView = (TextView) findViewById(R.id.lblVolumeAnsSphere);
-			txtView.setText(Float.toString(sphere.Volume()));
+			txtView.setText(RoundingRounding.RRR(Float.toString(sphere.Volume())));
 
 		} catch (NegativeException e) {
 			Context context = getApplicationContext();

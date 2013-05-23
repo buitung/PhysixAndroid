@@ -54,8 +54,7 @@
         android:layout_above="@+id/lblVectorVectorAdd2"
         android:layout_toRightOf="@+id/txtVectorXVectorAdd1"
         android:ems="10"
-        android:hint="y"
-        android:inputType="numberSigned" />
+        android:hint="y" />
 
     <EditText
         android:id="@+id/txtVectorZVectorAdd1"
@@ -65,8 +64,7 @@
         android:layout_alignBottom="@+id/txtVectorYVectorAdd1"
         android:layout_toRightOf="@+id/txtVectorYVectorAdd1"
         android:ems="10"
-        android:hint="z"
-        android:inputType="numberSigned" />
+        android:hint="z" />
 
     <EditText
         android:id="@+id/txtVectorXVectorAdd1"
@@ -76,8 +74,7 @@
         android:layout_marginLeft="15dp"
         android:layout_toRightOf="@+id/lblVectorVectorAdd1"
         android:ems="10"
-        android:hint="x"
-        android:inputType="numberSigned" />
+        android:hint="x" />
 
     <EditText
         android:id="@+id/txtVectorXVectorAdd2"
@@ -86,8 +83,7 @@
         android:layout_alignBottom="@+id/lblVectorVectorAdd2"
         android:layout_alignLeft="@+id/txtVectorXVectorAdd1"
         android:ems="10"
-        android:hint="x"
-        android:inputType="numberSigned" >
+        android:hint="x" >
 
         <requestFocus />
     </EditText>
@@ -99,8 +95,7 @@
         android:layout_alignBottom="@+id/txtVectorXVectorAdd2"
         android:layout_toRightOf="@+id/txtVectorXVectorAdd2"
         android:ems="10"
-        android:hint="y"
-        android:inputType="numberSigned" />
+        android:hint="y" />
 
     <EditText
         android:id="@+id/txtVectorZVectorAdd2"
@@ -109,8 +104,7 @@
         android:layout_alignBottom="@+id/txtVectorXVectorAdd2"
         android:layout_alignRight="@+id/txtVectorZVectorAdd1"
         android:ems="10"
-        android:hint="z"
-        android:inputType="numberSigned" />
+        android:hint="z" />
 
     <Button
         android:id="@+id/btnCalculateVectorAdd"
@@ -120,6 +114,7 @@
         android:layout_alignRight="@+id/textView2"
         android:layout_below="@+id/lblVectorVectorAdd2"
         android:layout_marginTop="38dp"
+        android:onClick="calculate"
         android:text="Calculate" />
 
     <TextView

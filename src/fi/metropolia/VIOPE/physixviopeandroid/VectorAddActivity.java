@@ -10,6 +10,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 import fi.metropolia.VIOPE.exception.ParsingException;
+import fi.metropolia.VIOPE.physixlib.RoundingRounding;
 import fi.metropolia.VIOPE.physixlib.Vector;
 
 public class VectorAddActivity extends Activity {
@@ -35,27 +36,45 @@ public class VectorAddActivity extends Activity {
 				x1 = Float.parseFloat(editText.getText().toString());
 				editText = (EditText) findViewById(R.id.txtVectorYVectorAdd1);
 				y1 = Float.parseFloat(editText.getText().toString());
-				editText = (EditText) findViewById(R.id.txtVectorZVectorAdd1);
-				z1 = Float.parseFloat(editText.getText().toString());
 				editText = (EditText) findViewById(R.id.txtVectorXVectorAdd2);
 				x2 = Float.parseFloat(editText.getText().toString());
 				editText = (EditText) findViewById(R.id.txtVectorYVectorAdd2);
 				y2 = Float.parseFloat(editText.getText().toString());
-				editText = (EditText) findViewById(R.id.txtVectorZVectorAdd2);
-				z2 = Float.parseFloat(editText.getText().toString());
 			} catch (Exception e) {
 				throw new ParsingException(
 						"Please enter inputs in the right form");
+			}
+			EditText editText = (EditText) findViewById(R.id.txtVectorZVectorAdd1);
+			if (editText.getText().toString().trim().length() == 0)
+				z1 = 0;
+			else {
+				try {
+					z1 = Float.parseFloat(editText.getText().toString());
+				} catch (Exception e) {
+					throw new ParsingException(
+							"Please enter inputs in the right form");
+				}
+			}
+			editText = (EditText) findViewById(R.id.txtVectorZVectorAdd2);
+			if (editText.getText().toString().trim().length() == 0)
+				z2 = 0;
+			else {
+				try {
+					z2 = Float.parseFloat(editText.getText().toString());
+				} catch (Exception e) {
+					throw new ParsingException(
+							"Please enter inputs in the right form");
+				}
 			}
 			Vector vector1 = new Vector(x1, y1, z1);
 			Vector vector2 = new Vector(x2, y2, z2);
 			vector1.AddVec(vector2);
 			TextView txtView = (TextView) findViewById(R.id.lblVectorSumXVectorAdd);
-			txtView.setText(Float.toString(vector1.getX()));
+			txtView.setText(RoundingRounding.RRR(Float.toString(vector1.getX())));
 			txtView = (TextView) findViewById(R.id.lblVectorSumYVectorAdd);
-			txtView.setText(Float.toString((vector1.getY())));
+			txtView.setText(RoundingRounding.RRR(Float.toString((vector1.getY()))));
 			txtView = (TextView) findViewById(R.id.lblVectorSumZVectorAdd);
-			txtView.setText(Float.toString((vector1.getZ())));
+			txtView.setText(RoundingRounding.RRR(Float.toString((vector1.getZ()))));
 
 		} catch (ParsingException e) {
 			Context context = getApplicationContext();

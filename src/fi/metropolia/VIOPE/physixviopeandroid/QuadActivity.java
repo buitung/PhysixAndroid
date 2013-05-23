@@ -3,6 +3,7 @@ package fi.metropolia.VIOPE.physixviopeandroid;
 import fi.metropolia.VIOPE.exception.NegativeException;
 import fi.metropolia.VIOPE.exception.ParsingException;
 import fi.metropolia.VIOPE.physixlib.Quad;
+import fi.metropolia.VIOPE.physixlib.RoundingRounding;
 import android.os.Bundle;
 import android.app.Activity;
 import android.app.Dialog;
@@ -42,9 +43,9 @@ public class QuadActivity extends Activity {
 			}
 			Quad quad = new Quad(w, h);
 			TextView txtView = (TextView) findViewById(R.id.lblAreaAnsQuad);
-			txtView.setText(Float.toString(quad.Area()));
+			txtView.setText(RoundingRounding.RRR(Float.toString(quad.Area())));
 			txtView = (TextView) findViewById(R.id.lblPerimeterAnsQuad);
-			txtView.setText(Float.toString((quad.Perimeter())));
+			txtView.setText(RoundingRounding.RRR(Float.toString((quad.Perimeter()))));
 
 		} catch (NegativeException e) {
 			Context context = getApplicationContext();

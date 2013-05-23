@@ -45,8 +45,7 @@
         android:layout_alignBottom="@+id/lblVectorYVectorInformation1"
         android:layout_toRightOf="@+id/lblVectorYVectorInformation1"
         android:ems="10"
-        android:hint="z"
-        android:inputType="numberSigned" />
+        android:hint="z" />
 
     <EditText
         android:id="@+id/lblVectorXVectorInformation1"
@@ -56,11 +55,7 @@
         android:layout_marginLeft="21dp"
         android:layout_toRightOf="@+id/lblVectorVectorInformation"
         android:ems="10"
-        android:hint="x"
-        android:inputType="numberSigned" >
-
-        <requestFocus />
-    </EditText>
+        android:hint="x" />
 
     <EditText
         android:id="@+id/lblVectorYVectorInformation1"
@@ -70,8 +65,7 @@
         android:layout_alignBottom="@+id/lblVectorXVectorInformation1"
         android:layout_toRightOf="@+id/lblVectorXVectorInformation1"
         android:ems="10"
-        android:hint="y"
-        android:inputType="numberSigned" />
+        android:hint="y" />
 
     <TextView
         android:id="@+id/lblVectorAnsVectorInformation"
@@ -101,6 +95,7 @@
         android:layout_alignRight="@+id/textView2"
         android:layout_below="@+id/lblVectorVectorInformation"
         android:layout_marginTop="36dp"
+        android:onClick="calculate"
         android:text="Calculate" />
 
     <TextView

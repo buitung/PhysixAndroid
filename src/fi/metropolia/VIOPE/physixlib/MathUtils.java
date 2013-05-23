@@ -83,13 +83,14 @@ public class MathUtils {
 	 *            float
 	 * @return the float value of the length of the opposite side providing a
 	 *         for angle and b for hypotenuse.
-	 * @throws NegativeException 
+	 * @throws NegativeException
 	 */
 
 	public static float OppositeSide(float a, float b) throws NegativeException {
 		if (b <= 0)
-			throw new NegativeException(
-					"The hypotenuse must be positive");
+			throw new NegativeException("The hypotenuse must be positive");
+		if (a <= 0 || a > MathUtils.Deg2Rad(90))
+			throw new NegativeException("The angle must be between 0 and 90");
 		return b * (float) Math.sin(a);
 	}
 
@@ -101,7 +102,7 @@ public class MathUtils {
 	 *            float
 	 * @return the float value of the angle providing a for opposite and b for
 	 *         hypotenuse.
-	 * @throws NegativeException 
+	 * @throws NegativeException
 	 */
 
 	public static float SinAngle(float a, float b) throws NegativeException {
@@ -118,12 +119,14 @@ public class MathUtils {
 	 *            float
 	 * @return the float value of the length of the adjacent side providing a
 	 *         for angle and b for hypotenuse.
-	 * @throws NegativeException 
+	 * @throws NegativeException
 	 */
 	public static float AdjacentSide(float a, float b) throws NegativeException {
 		if (b <= 0)
-			throw new NegativeException(
-					"The hypotenuse must be positive");
+			throw new NegativeException("The hypotenuse must be positive");
+		if (a <= 0 || a > MathUtils.Deg2Rad(90))
+			throw new NegativeException("The angle must be between 0 and 90");
+
 		return b * (float) Math.cos(a);
 	}
 
@@ -135,7 +138,7 @@ public class MathUtils {
 	 *            float
 	 * @return the float value of the angle providing a for adjacent and b for
 	 *         hypotenuse.
-	 * @throws NegativeException 
+	 * @throws NegativeException
 	 */
 	public static float CosAngle(float a, float b) throws NegativeException {
 		if (a * b <= 0)
@@ -151,7 +154,7 @@ public class MathUtils {
 	 *            float
 	 * @return the float value of the angle providing a for opposite and b for
 	 *         adjacent.
-	 * @throws NegativeException 
+	 * @throws NegativeException
 	 */
 	public static float TanAngle(float a, float b) throws NegativeException {
 		if (a * b <= 0)

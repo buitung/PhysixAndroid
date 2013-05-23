@@ -1,4 +1,7 @@
 package fi.metropolia.VIOPE.physixlib;
+
+import fi.metropolia.VIOPE.exception.NegativeException;
+
 /**
  * @author: Tung Trinh
  */
@@ -22,8 +25,11 @@ public class Projectile {
      *
      * @param v velocity
      * @param a angle Constructor
+     * @throws NegativeException 
      */
-    public Projectile(float v, float a) {
+    public Projectile(float v, float a) throws NegativeException {
+    	if (v<0) throw new NegativeException("Velocity must be positive");
+    	if (a<0 || a>MathUtils.Deg2Rad(180))throw new NegativeException("Angle must be between 0 and 180");
         this.velocity = v;
         this.angle = a;
     }

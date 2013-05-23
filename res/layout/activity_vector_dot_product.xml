@@ -54,8 +54,7 @@
         android:layout_above="@+id/lblVector2VectorDotProduct"
         android:layout_toRightOf="@+id/txtVectorXVectorDotProduct1"
         android:ems="10"
-        android:hint="y"
-        android:inputType="numberSigned" />
+        android:hint="y" />
 
     <EditText
         android:id="@+id/txtVectorZVectorDotProduct1"
@@ -65,8 +64,7 @@
         android:layout_alignBottom="@+id/txtVectorYVectorDotProduct1"
         android:layout_toRightOf="@+id/txtVectorYVectorDotProduct1"
         android:ems="10"
-        android:hint="z"
-        android:inputType="numberSigned" />
+        android:hint="z" />
 
     <EditText
         android:id="@+id/txtVectorXVectorDotProduct1"
@@ -76,8 +74,7 @@
         android:layout_marginLeft="15dp"
         android:layout_toRightOf="@+id/lblVector1VectorDotProduct"
         android:ems="10"
-        android:hint="x"
-        android:inputType="numberSigned" />
+        android:hint="x" />
 
     <EditText
         android:id="@+id/txtVectorXVectorDotProduct2"
@@ -86,11 +83,7 @@
         android:layout_alignBottom="@+id/lblVector2VectorDotProduct"
         android:layout_alignLeft="@+id/txtVectorXVectorDotProduct1"
         android:ems="10"
-        android:hint="x"
-        android:inputType="numberSigned" >
-
-        <requestFocus />
-    </EditText>
+        android:hint="x" />
 
     <EditText
         android:id="@+id/txtVectorYVectorDotProduct2"
@@ -99,8 +92,7 @@
         android:layout_alignBottom="@+id/txtVectorXVectorDotProduct2"
         android:layout_toRightOf="@+id/txtVectorXVectorDotProduct2"
         android:ems="10"
-        android:hint="y"
-        android:inputType="numberSigned" />
+        android:hint="y" />
 
     <EditText
         android:id="@+id/txtVectorZVectorDotProduct2"
@@ -109,8 +101,7 @@
         android:layout_alignBottom="@+id/txtVectorXVectorDotProduct2"
         android:layout_alignRight="@+id/txtVectorZVectorDotProduct1"
         android:ems="10"
-        android:hint="z"
-        android:inputType="numberSigned" />
+        android:hint="z" />
 
     <Button
         android:id="@+id/btnCalculateVectorDotProduct"
@@ -120,6 +111,7 @@
         android:layout_alignRight="@+id/textView2"
         android:layout_below="@+id/lblVector2VectorDotProduct"
         android:layout_marginTop="38dp"
+        android:onClick="calculate"
         android:text="Calculate" />
 
     <TextView

@@ -106,7 +106,7 @@
         android:layout_alignLeft="@+id/textView1"
         android:ems="10"
         android:hint="Angle"
-        android:inputType="numberDecimal" />
+         />
 
     <Button
         android:id="@+id/btnAngleConvertAngleCalculation"

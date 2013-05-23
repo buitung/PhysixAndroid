@@ -54,8 +54,7 @@
         android:layout_above="@+id/lblVector2CrossProduct"
         android:layout_toRightOf="@+id/txtVectorXVectorCrossProduct1"
         android:ems="10"
-        android:hint="y"
-        android:inputType="numberSigned" />
+        android:hint="y" />
 
     <EditText
         android:id="@+id/txtVectorZVectorCrossProduct1"
@@ -65,8 +64,7 @@
         android:layout_alignBottom="@+id/txtVectorYVectorCrossProduct1"
         android:layout_toRightOf="@+id/txtVectorYVectorCrossProduct1"
         android:ems="10"
-        android:hint="z"
-        android:inputType="numberSigned" />
+        android:hint="z" />
 
     <EditText
         android:id="@+id/txtVectorXVectorCrossProduct1"
@@ -76,8 +74,7 @@
         android:layout_marginLeft="15dp"
         android:layout_toRightOf="@+id/lblVector1CrossProduct"
         android:ems="10"
-        android:hint="x"
-        android:inputType="numberSigned" />
+        android:hint="x" />
 
     <EditText
         android:id="@+id/txtVectorXVectorCrossProduct2"
@@ -86,11 +83,7 @@
         android:layout_alignBottom="@+id/lblVector2CrossProduct"
         android:layout_alignLeft="@+id/txtVectorXVectorCrossProduct1"
         android:ems="10"
-        android:hint="x"
-        android:inputType="numberSigned" >
-
-        <requestFocus />
-    </EditText>
+        android:hint="x" />
 
     <EditText
         android:id="@+id/txtVectorYVectorCrossProduct2"
@@ -99,8 +92,7 @@
         android:layout_alignBottom="@+id/txtVectorXVectorCrossProduct2"
         android:layout_toRightOf="@+id/txtVectorXVectorCrossProduct2"
         android:ems="10"
-        android:hint="y"
-        android:inputType="numberSigned" />
+        android:hint="y" />
 
     <EditText
         android:id="@+id/txtVectorZVectorCrossProduct2"
@@ -109,8 +101,7 @@
         android:layout_alignBottom="@+id/txtVectorXVectorCrossProduct2"
         android:layout_alignRight="@+id/txtVectorZVectorCrossProduct1"
         android:ems="10"
-        android:hint="z"
-        android:inputType="numberSigned" />
+        android:hint="z" />
 
     <Button
         android:id="@+id/btnCalculateVectorCrossProduct"
@@ -120,6 +111,7 @@
         android:layout_alignRight="@+id/textView2"
         android:layout_below="@+id/lblVector2CrossProduct"
         android:layout_marginTop="38dp"
+        android:onClick="calculate"
         android:text="Calculate" />
 
     <TextView

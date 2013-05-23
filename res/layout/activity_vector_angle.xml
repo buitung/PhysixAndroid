@@ -54,8 +54,7 @@
         android:layout_above="@+id/lblVectorVectorAngle2"
         android:layout_toRightOf="@+id/txtX1VectorAngle"
         android:ems="10"
-        android:hint="y"
-        android:inputType="numberSigned" />
+        android:hint="y" />
 
     <EditText
         android:id="@+id/txtZ1VectorAngle"
@@ -65,8 +64,7 @@
         android:layout_alignBottom="@+id/txtY1VectorAngle"
         android:layout_toRightOf="@+id/txtY1VectorAngle"
         android:ems="10"
-        android:hint="z"
-        android:inputType="numberSigned" />
+        android:hint="z" />
 
     <EditText
         android:id="@+id/txtX1VectorAngle"
@@ -76,8 +74,7 @@
         android:layout_marginLeft="15dp"
         android:layout_toRightOf="@+id/lblVectorVectorAngle1"
         android:ems="10"
-        android:hint="x"
-        android:inputType="numberSigned" />
+        android:hint="x" />
 
     <EditText
         android:id="@+id/txtX2VectorAngle"
@@ -86,8 +83,7 @@
         android:layout_alignBottom="@+id/lblVectorVectorAngle2"
         android:layout_alignLeft="@+id/txtX1VectorAngle"
         android:ems="10"
-        android:hint="x"
-        android:inputType="numberSigned" >
+        android:hint="x" >
 
         <requestFocus />
     </EditText>
@@ -99,8 +95,7 @@
         android:layout_alignBottom="@+id/txtX2VectorAngle"
         android:layout_toRightOf="@+id/txtX2VectorAngle"
         android:ems="10"
-        android:hint="y"
-        android:inputType="numberSigned" />
+        android:hint="y" />
 
     <EditText
         android:id="@+id/txtZ2VectorAngle"
@@ -109,8 +104,7 @@
         android:layout_alignBottom="@+id/txtX2VectorAngle"
         android:layout_alignRight="@+id/txtZ1VectorAngle"
         android:ems="10"
-        android:hint="z"
-        android:inputType="numberSigned" />
+        android:hint="z" />
 
     <Button
         android:id="@+id/btnCalculateVectorAngle"
@@ -120,6 +114,7 @@
         android:layout_alignRight="@+id/textView2"
         android:layout_below="@+id/lblVectorVectorAngle2"
         android:layout_marginTop="38dp"
+        android:onClick="calculate"
         android:text="Calculate" />
 
     <TextView
@@ -170,7 +165,16 @@
         android:layout_height="wrap_content"
         android:layout_alignBaseline="@+id/lblAngleAnswerVectorAngle"
         android:layout_alignBottom="@+id/lblAngleAnswerVectorAngle"
-        android:layout_alignRight="@+id/txtZ2VectorAngle"
+        android:layout_alignRight="@+id/btnInformationVectorAngle"
+        android:onClick="convertDegAndRad"
         android:text="Deg/Rad" />
+
+    <TextView
+        android:id="@+id/lblDegreeRadVectorAngle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/lblAngleAnsVectorAngle"
+        android:layout_toLeftOf="@+id/tgbtnDegRadVectorAngle"
+        android:text="TextView" />
 
 </RelativeLayout>

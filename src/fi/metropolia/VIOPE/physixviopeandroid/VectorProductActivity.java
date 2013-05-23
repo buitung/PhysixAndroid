@@ -1,6 +1,7 @@
 package fi.metropolia.VIOPE.physixviopeandroid;
 
 import fi.metropolia.VIOPE.exception.ParsingException;
+import fi.metropolia.VIOPE.physixlib.RoundingRounding;
 import fi.metropolia.VIOPE.physixlib.Vector;
 import android.os.Bundle;
 import android.app.Activity;
@@ -35,8 +36,6 @@ public class VectorProductActivity extends Activity {
 				x1 = Float.parseFloat(editText.getText().toString());
 				editText = (EditText) findViewById(R.id.txtVectorYVectorProduct1);
 				y1 = Float.parseFloat(editText.getText().toString());
-				editText = (EditText) findViewById(R.id.txtVectorZVectorProduct1);
-				z1 = Float.parseFloat(editText.getText().toString());
 				editText = (EditText) findViewById(R.id.txtMultiplierVectorProduct);
 				mul = Float.parseFloat(editText.getText().toString());
 
@@ -44,14 +43,26 @@ public class VectorProductActivity extends Activity {
 				throw new ParsingException(
 						"Please enter inputs in the right form");
 			}
+			EditText editText = (EditText) findViewById(R.id.txtVectorZVectorProduct1);
+			if (editText.getText().toString().trim().length() == 0)
+				z1 = 0;
+			else {
+				try {
+					z1 = Float.parseFloat(editText.getText().toString());
+				} catch (Exception e) {
+					throw new ParsingException(
+							"Please enter inputs in the right form");
+				}
+			}
+
 			Vector vector1 = new Vector(x1, y1, z1);
 			vector1.Product(mul);
 			TextView txtView = (TextView) findViewById(R.id.lblProductXVectorProduct);
-			txtView.setText(Float.toString(vector1.getX()));
+			txtView.setText(RoundingRounding.RRR(Float.toString(vector1.getX())));
 			txtView = (TextView) findViewById(R.id.lblProductYVectorProduct);
-			txtView.setText(Float.toString((vector1.getY())));
+			txtView.setText(RoundingRounding.RRR(Float.toString(vector1.getY())));
 			txtView = (TextView) findViewById(R.id.lblProductZVectorProduct);
-			txtView.setText(Float.toString((vector1.getZ())));
+			txtView.setText(RoundingRounding.RRR(Float.toString(vector1.getZ())));
 
 		} catch (ParsingException e) {
 			Context context = getApplicationContext();

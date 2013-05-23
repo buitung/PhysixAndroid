@@ -3,6 +3,7 @@ package fi.metropolia.VIOPE.physixviopeandroid;
 import fi.metropolia.VIOPE.exception.NegativeException;
 import fi.metropolia.VIOPE.exception.ParsingException;
 import fi.metropolia.VIOPE.physixlib.Pyramid;
+import fi.metropolia.VIOPE.physixlib.RoundingRounding;
 import android.os.Bundle;
 import android.app.Activity;
 import android.app.Dialog;
@@ -46,9 +47,9 @@ public class PyramidActivity extends Activity {
 			}
 			Pyramid pyramid = new Pyramid(a, b, c, h);
 			TextView txtView = (TextView) findViewById(R.id.lblAreaAnsPyramid);
-			txtView.setText(Float.toString(pyramid.Area()));
+			txtView.setText(RoundingRounding.RRR(Float.toString(pyramid.Area())));
 			txtView = (TextView) findViewById(R.id.lblVolumeAnsPyramid);
-			txtView.setText(Float.toString((pyramid.Volume())));
+			txtView.setText(RoundingRounding.RRR(Float.toString((pyramid.Volume()))));
 
 		} catch (NegativeException e) {
 			Context context = getApplicationContext();

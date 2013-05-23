@@ -3,6 +3,7 @@ package fi.metropolia.VIOPE.physixviopeandroid;
 import fi.metropolia.VIOPE.exception.NegativeException;
 import fi.metropolia.VIOPE.exception.ParsingException;
 import fi.metropolia.VIOPE.physixlib.Circle;
+import fi.metropolia.VIOPE.physixlib.RoundingRounding;
 import android.app.Activity;
 import android.app.Dialog;
 import android.content.Context;
@@ -40,9 +41,9 @@ public class CircleActivity extends Activity {
 			}
 			Circle circle = new Circle(r);
 			TextView txtView = (TextView) findViewById(R.id.lblAreaAnsCircle);
-			txtView.setText(Float.toString(circle.Area()));
+			txtView.setText(RoundingRounding.RRR(Float.toString(circle.Area())));
 			txtView = (TextView) findViewById(R.id.lblCircumferenceAnsCircle);
-			txtView.setText(Float.toString(circle.Circumference()));
+			txtView.setText(RoundingRounding.RRR(Float.toString(circle.Circumference())));
 
 		} catch (NegativeException e) {
 			Context context = getApplicationContext();

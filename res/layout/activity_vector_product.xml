@@ -45,8 +45,7 @@
         android:layout_alignBottom="@+id/txtVectorYVectorProduct1"
         android:layout_toRightOf="@+id/txtVectorYVectorProduct1"
         android:ems="10"
-        android:hint="z"
-        android:inputType="numberSigned" />
+        android:hint="z" />
 
     <TextView
         android:id="@+id/lblProductLabelVectorProduct"
@@ -97,11 +96,7 @@
         android:layout_marginLeft="17dp"
         android:layout_toRightOf="@+id/lblVectorVectorProduct"
         android:ems="10"
-        android:hint="x"
-        android:inputType="numberSigned" >
-
-        <requestFocus />
-    </EditText>
+        android:hint="x" />
 
     <EditText
         android:id="@+id/txtVectorYVectorProduct1"
@@ -110,8 +105,7 @@
         android:layout_above="@+id/btnCalculateVectorProduct"
         android:layout_toRightOf="@+id/txtVectorXVectorProduct1"
         android:ems="10"
-        android:hint="y"
-        android:inputType="numberSigned" />
+        android:hint="y" />
 
     <Button
         android:id="@+id/btnCalculateVectorProduct"
@@ -121,6 +115,7 @@
         android:layout_alignRight="@+id/textView2"
         android:layout_below="@+id/lblVectorVectorProduct"
         android:layout_marginTop="56dp"
+        android:onClick="calculate"
         android:text="Calculate" />
 
     <EditText
@@ -132,8 +127,7 @@
         android:layout_below="@+id/lblVectorVectorProduct"
         android:layout_marginTop="14dp"
         android:ems="10"
-        android:hint="Number to be multiplied"
-        android:inputType="numberDecimal" />
+        android:hint="Number to be multiplied" />
 
     <TextView
         android:id="@+id/lblProductYVectorProduct"

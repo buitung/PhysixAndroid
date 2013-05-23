@@ -3,6 +3,7 @@ package fi.metropolia.VIOPE.physixviopeandroid;
 import fi.metropolia.VIOPE.exception.NegativeException;
 import fi.metropolia.VIOPE.exception.ParsingException;
 import fi.metropolia.VIOPE.physixlib.Brick;
+import fi.metropolia.VIOPE.physixlib.RoundingRounding;
 import android.os.Bundle;
 import android.app.Activity;
 import android.app.Dialog;
@@ -44,9 +45,9 @@ public class BrickActivity extends Activity {
 			}
 			Brick brick = new Brick(w, h, l);
 			TextView txtView = (TextView) findViewById(R.id.lblAreaAnsBrick);
-			txtView.setText(Float.toString(brick.Area()));
+			txtView.setText(RoundingRounding.RRR(Float.toString(brick.Area())));
 			txtView = (TextView) findViewById(R.id.lblVolumeAnsBrick);
-			txtView.setText(Float.toString((brick.Volume())));
+			txtView.setText(RoundingRounding.RRR(Float.toString((brick.Volume()))));
 
 		} catch (NegativeException e) {
 			Context context = getApplicationContext();

@@ -1,9 +1,8 @@
 package fi.metropolia.VIOPE.physixviopeandroid;
 
-import fi.metropolia.VIOPE.exception.NegativeException;
 import fi.metropolia.VIOPE.exception.ParsingException;
-import fi.metropolia.VIOPE.physixlib.Brick;
 import fi.metropolia.VIOPE.physixlib.MathUtils;
+import fi.metropolia.VIOPE.physixlib.RoundingRounding;
 import android.os.Bundle;
 import android.app.Activity;
 import android.app.Dialog;
@@ -67,10 +66,10 @@ public class AngleCalActivity extends Activity {
 					angle = Float.parseFloat(editText.getText().toString());
 					if (txtView.getText().toString().equalsIgnoreCase("degree")) {
 						txtView.setText("Radian");
-						editText.setText(Float.toString(MathUtils.Deg2Rad(angle)));
+						editText.setText(RoundingRounding.RRR(Float.toString(MathUtils.Deg2Rad(angle))));
 					} else{
 						txtView.setText("Degree");
-						editText.setText(Float.toString(MathUtils.Rag2Deg(angle)));
+						editText.setText(RoundingRounding.RRR(Float.toString(MathUtils.Rag2Deg(angle))));
 					}
 				} catch (Exception e){
 					throw new ParsingException(
@@ -107,11 +106,11 @@ public class AngleCalActivity extends Activity {
 				angle = MathUtils.Deg2Rad(angle);
 			}
 			txtView = (TextView) findViewById(R.id.lblSinAngleCalculation);
-			txtView.setText(Double.toString(Math.sin(angle)));
+			txtView.setText(RoundingRounding.RRR(Double.toString(Math.sin(angle))));
 			txtView = (TextView) findViewById(R.id.lblCosAngleCalculation);
-			txtView.setText(Double.toString(Math.cos(angle)));
+			txtView.setText(RoundingRounding.RRR(Double.toString(Math.cos(angle))));
 			txtView = (TextView) findViewById(R.id.lblTanAngleCalculation);
-			txtView.setText(Double.toString(Math.tan(angle)));
+			txtView.setText(RoundingRounding.RRR(Double.toString(Math.tan(angle))));
 		} catch (ParsingException e) {
 			Context context = getApplicationContext();
 			CharSequence text = e.getMessage();

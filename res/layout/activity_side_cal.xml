@@ -34,7 +34,8 @@
         android:layout_height="wrap_content"
         android:layout_alignRight="@+id/textView2"
         android:layout_below="@+id/textView1"
-        android:text="Deg/Rad" />
+        android:onClick="convertDegAndRad"
+        android:text="Deg-Rad" />
 
     <TextView
         android:id="@+id/lblDistanceAnsProj"
@@ -88,14 +89,14 @@
 
     <EditText
         android:id="@+id/txtAngleSideCalculation"
-        android:layout_width="200dp"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_alignBaseline="@+id/btnConvertSideCalculation"
         android:layout_alignBottom="@+id/btnConvertSideCalculation"
         android:layout_alignLeft="@+id/textView1"
         android:ems="10"
-        android:hint="Angle in deg/rad"
-        android:inputType="numberDecimal" />
+        android:hint="Angle"
+        />
 
     <EditText
         android:id="@+id/txtHypotenuseSideCalculation"
@@ -106,11 +107,7 @@
         android:layout_below="@+id/btnConvertSideCalculation"
         android:layout_marginTop="19dp"
         android:ems="10"
-        android:hint="Hypotenuse length"
-        android:inputType="number" >
-
-        <requestFocus />
-    </EditText>
+        android:hint="Hypotenuse length"/>
 
     <Button
         android:id="@+id/btnCalculateSideCalculation"
@@ -120,6 +117,16 @@
         android:layout_alignRight="@+id/txtHypotenuseSideCalculation"
         android:layout_below="@+id/txtHypotenuseSideCalculation"
         android:layout_marginTop="22dp"
+        android:onClick="calculate"
         android:text="Calculate" />
+
+    <TextView
+        android:id="@+id/lblDegreeRadianSideCalculation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnConvertSideCalculation"
+        android:layout_alignBottom="@+id/btnConvertSideCalculation"
+        android:layout_toLeftOf="@+id/btnConvertSideCalculation"
+        android:text="Degree" />
 
 </RelativeLayout>

@@ -2,6 +2,7 @@ package fi.metropolia.VIOPE.physixviopeandroid;
 
 import fi.metropolia.VIOPE.exception.NegativeException;
 import fi.metropolia.VIOPE.exception.ParsingException;
+import fi.metropolia.VIOPE.physixlib.RoundingRounding;
 import fi.metropolia.VIOPE.physixlib.Triangle;
 import android.os.Bundle;
 import android.app.Activity;
@@ -44,9 +45,9 @@ public class TriangleActivity extends Activity {
 			}
 			Triangle triangle = new Triangle(a, b, c);
 			TextView txtView = (TextView) findViewById(R.id.lblAreaAnsTriangle);
-			txtView.setText(Float.toString(triangle.Area()));
+			txtView.setText(RoundingRounding.RRR(Float.toString(triangle.Area())));
 			txtView = (TextView) findViewById(R.id.lblPerimeterAnsTriangle);
-			txtView.setText(Float.toString((triangle.Perimeter())));
+			txtView.setText(RoundingRounding.RRR(Float.toString((triangle.Perimeter()))));
 
 		} catch (NegativeException e) {
 			Context context = getApplicationContext();

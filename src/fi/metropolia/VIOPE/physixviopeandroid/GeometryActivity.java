@@ -1,6 +1,5 @@
 package fi.metropolia.VIOPE.physixviopeandroid;
 
-import fi.metropolia.VIOPE.physixlib.Sphere;
 import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;

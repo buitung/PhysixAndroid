@@ -28,7 +28,7 @@
         android:textSize="13sp" />
 
     <EditText
-        android:id="@+id/txtX1VectorAngle"
+        android:id="@+id/txtVelocityProjectile"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/textView1"
@@ -36,33 +36,28 @@
         android:layout_below="@+id/textView1"
         android:layout_marginTop="24dp"
         android:ems="10"
-        android:hint="Initial velocity"
-        android:inputType="numberDecimal" >
-
-        <requestFocus />
-    </EditText>
+        android:hint="Initial velocity" />
 
     <Button
         android:id="@+id/btnCalculateProjectile"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/txtAngleProj"
-        android:layout_alignRight="@+id/txtAngleProj"
+        android:layout_alignRight="@+id/txtVelocityProjectile"
         android:layout_below="@+id/txtAngleProj"
         android:layout_marginTop="22dp"
+        android:onClick="calculate"
         android:text="Calculate" />
 
     <EditText
         android:id="@+id/txtAngleProj"
-        android:layout_width="wrap_content"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/txtX1VectorAngle"
-        android:layout_alignRight="@+id/txtX1VectorAngle"
-        android:layout_below="@+id/txtX1VectorAngle"
+        android:layout_alignLeft="@+id/txtVelocityProjectile"
+        android:layout_below="@+id/txtVelocityProjectile"
         android:layout_marginTop="16dp"
         android:ems="10"
-        android:hint="Initial angle"
-        android:inputType="numberDecimal" />
+        android:hint="Initial angle" />
 
     <TextView
         android:id="@+id/lblDistanceProj"
@@ -134,5 +129,24 @@
         android:layout_alignLeft="@+id/lblHeightAnsProj"
         android:layout_alignRight="@+id/btnInformationVectorAngle"
         android:text="" />
+
+    <TextView
+        android:id="@+id/lblDegreeRadianProjectile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtAngleProj"
+        android:layout_alignBottom="@+id/txtAngleProj"
+        android:layout_toRightOf="@+id/txtAngleProj"
+        android:text="Degree" />
+
+    <Button
+        android:id="@+id/btnConvertRadAndDeg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/lblDegreeRadianProjectile"
+        android:layout_alignBottom="@+id/lblDegreeRadianProjectile"
+        android:layout_alignParentRight="true"
+        android:onClick="convertDegAndRad"
+        android:text="Deg-Rad" />
 
 </RelativeLayout>
