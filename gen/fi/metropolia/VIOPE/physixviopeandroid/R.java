@@ -176,14 +176,8 @@ public final class R {
         public static final int lblVectorVectorAngle2=0x7f08008b;
         public static final int lblVectorVectorInformation=0x7f0800bf;
         public static final int lblVectorVectorProduct=0x7f0800cc;
-        public static final int lblVectorXVectorDotProduct1=0x7f0800b5;
-        public static final int lblVectorXVectorDotProduct2=0x7f0800b7;
         public static final int lblVectorXVectorInformation1=0x7f0800c2;
-        public static final int lblVectorYVectorDotProduct1=0x7f0800b4;
-        public static final int lblVectorYVectorDotProduct2=0x7f0800b8;
         public static final int lblVectorYVectorInformation1=0x7f0800c1;
-        public static final int lblVectorZVectorDotProduct1=0x7f0800b6;
-        public static final int lblVectorZVectorDotProduct2=0x7f0800b9;
         public static final int lblVectorZVectorInformation1=0x7f0800c0;
         public static final int lblVolumeAnsBrick=0x7f08001a;
         public static final int lblVolumeAnsPyramid=0x7f080048;
@@ -221,6 +215,8 @@ public final class R {
         public static final int txtVectorXVectorCrossProduct2=0x7f08009b;
         public static final int txtVectorXVectorDistance1=0x7f0800a8;
         public static final int txtVectorXVectorDistance2=0x7f0800aa;
+        public static final int txtVectorXVectorDotProduct1=0x7f0800b5;
+        public static final int txtVectorXVectorDotProduct2=0x7f0800b7;
         public static final int txtVectorXVectorProduct1=0x7f0800d3;
         public static final int txtVectorXVectorSubtract1=0x7f0800db;
         public static final int txtVectorXVectorSubtract2=0x7f0800dd;
@@ -230,6 +226,8 @@ public final class R {
         public static final int txtVectorYVectorCrossProduct2=0x7f08009c;
         public static final int txtVectorYVectorDistance1=0x7f0800a7;
         public static final int txtVectorYVectorDistance2=0x7f0800ab;
+        public static final int txtVectorYVectorDotProduct1=0x7f0800b4;
+        public static final int txtVectorYVectorDotProduct2=0x7f0800b8;
         public static final int txtVectorYVectorProduct1=0x7f0800ce;
         public static final int txtVectorYVectorSubtract1=0x7f0800da;
         public static final int txtVectorYVectorSubtract2=0x7f0800de;
@@ -239,6 +237,8 @@ public final class R {
         public static final int txtVectorZVectorCrossProduct2=0x7f08009d;
         public static final int txtVectorZVectorDistance1=0x7f0800a9;
         public static final int txtVectorZVectorDistance2=0x7f0800ac;
+        public static final int txtVectorZVectorDotProduct1=0x7f0800b6;
+        public static final int txtVectorZVectorDotProduct2=0x7f0800b9;
         public static final int txtVectorZVectorProduct1=0x7f0800cd;
         public static final int txtVectorZVectorSubtract1=0x7f0800dc;
         public static final int txtVectorZVectorSubtract2=0x7f0800df;

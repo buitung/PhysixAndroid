@@ -48,28 +48,28 @@
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <EditText
-        android:id="@+id/lblVectorYVectorDotProduct1"
+        android:id="@+id/txtVectorYVectorDotProduct1"
         android:layout_width="60dp"
         android:layout_height="wrap_content"
         android:layout_above="@+id/lblVector2VectorDotProduct"
-        android:layout_toRightOf="@+id/lblVectorXVectorDotProduct1"
+        android:layout_toRightOf="@+id/txtVectorXVectorDotProduct1"
         android:ems="10"
         android:hint="y"
         android:inputType="numberSigned" />
 
     <EditText
-        android:id="@+id/lblVectorZVectorDotProduct1"
+        android:id="@+id/txtVectorZVectorDotProduct1"
         android:layout_width="60dp"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/lblVectorYVectorDotProduct1"
-        android:layout_alignBottom="@+id/lblVectorYVectorDotProduct1"
-        android:layout_toRightOf="@+id/lblVectorYVectorDotProduct1"
+        android:layout_alignBaseline="@+id/txtVectorYVectorDotProduct1"
+        android:layout_alignBottom="@+id/txtVectorYVectorDotProduct1"
+        android:layout_toRightOf="@+id/txtVectorYVectorDotProduct1"
         android:ems="10"
         android:hint="z"
         android:inputType="numberSigned" />
 
     <EditText
-        android:id="@+id/lblVectorXVectorDotProduct1"
+        android:id="@+id/txtVectorXVectorDotProduct1"
         android:layout_width="60dp"
         android:layout_height="wrap_content"
         android:layout_above="@+id/lblVector2VectorDotProduct"
@@ -80,11 +80,11 @@
         android:inputType="numberSigned" />
 
     <EditText
-        android:id="@+id/lblVectorXVectorDotProduct2"
+        android:id="@+id/txtVectorXVectorDotProduct2"
         android:layout_width="60dp"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/lblVector2VectorDotProduct"
-        android:layout_alignLeft="@+id/lblVectorXVectorDotProduct1"
+        android:layout_alignLeft="@+id/txtVectorXVectorDotProduct1"
         android:ems="10"
         android:hint="x"
         android:inputType="numberSigned" >
@@ -93,21 +93,21 @@
     </EditText>
 
     <EditText
-        android:id="@+id/lblVectorYVectorDotProduct2"
+        android:id="@+id/txtVectorYVectorDotProduct2"
         android:layout_width="60dp"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/lblVectorXVectorDotProduct2"
-        android:layout_toRightOf="@+id/lblVectorXVectorDotProduct2"
+        android:layout_alignBottom="@+id/txtVectorXVectorDotProduct2"
+        android:layout_toRightOf="@+id/txtVectorXVectorDotProduct2"
         android:ems="10"
         android:hint="y"
         android:inputType="numberSigned" />
 
     <EditText
-        android:id="@+id/lblVectorZVectorDotProduct2"
+        android:id="@+id/txtVectorZVectorDotProduct2"
         android:layout_width="60dp"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/lblVectorXVectorDotProduct2"
-        android:layout_alignRight="@+id/lblVectorZVectorDotProduct1"
+        android:layout_alignBottom="@+id/txtVectorXVectorDotProduct2"
+        android:layout_alignRight="@+id/txtVectorZVectorDotProduct1"
         android:ems="10"
         android:hint="z"
         android:inputType="numberSigned" />

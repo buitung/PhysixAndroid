@@ -1,11 +1,16 @@
 package fi.metropolia.VIOPE.physixviopeandroid;
 
+import fi.metropolia.VIOPE.exception.ParsingException;
+import fi.metropolia.VIOPE.physixlib.Vector;
 import android.os.Bundle;
 import android.app.Activity;
 import android.app.Dialog;
+import android.content.Context;
 import android.view.Menu;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class VectorProductActivity extends Activity {
 
@@ -20,6 +25,47 @@ public class VectorProductActivity extends Activity {
 		// Inflate the menu; this adds items to the action bar if it is present.
 		getMenuInflater().inflate(R.menu.vector_product, menu);
 		return true;
+	}
+
+	public void calculate(View view) throws ParsingException {
+		float x1 = 0, y1 = 0, z1 = 0, mul = 0;
+		try {
+			try {
+				EditText editText = (EditText) findViewById(R.id.txtVectorXVectorProduct1);
+				x1 = Float.parseFloat(editText.getText().toString());
+				editText = (EditText) findViewById(R.id.txtVectorYVectorProduct1);
+				y1 = Float.parseFloat(editText.getText().toString());
+				editText = (EditText) findViewById(R.id.txtVectorZVectorProduct1);
+				z1 = Float.parseFloat(editText.getText().toString());
+				editText = (EditText) findViewById(R.id.txtMultiplierVectorProduct);
+				mul = Float.parseFloat(editText.getText().toString());
+
+			} catch (Exception e) {
+				throw new ParsingException(
+						"Please enter inputs in the right form");
+			}
+			Vector vector1 = new Vector(x1, y1, z1);
+			vector1.Product(mul);
+			TextView txtView = (TextView) findViewById(R.id.lblProductXVectorProduct);
+			txtView.setText(Float.toString(vector1.getX()));
+			txtView = (TextView) findViewById(R.id.lblProductYVectorProduct);
+			txtView.setText(Float.toString((vector1.getY())));
+			txtView = (TextView) findViewById(R.id.lblProductZVectorProduct);
+			txtView.setText(Float.toString((vector1.getZ())));
+
+		} catch (ParsingException e) {
+			Context context = getApplicationContext();
+			CharSequence text = e.getMessage();
+			int duration = Toast.LENGTH_LONG;
+			Toast toast = Toast.makeText(context, text, duration);
+			toast.show();
+			TextView txtView = (TextView) findViewById(R.id.lblProductXVectorProduct);
+			txtView.setText("");
+			txtView = (TextView) findViewById(R.id.lblProductYVectorProduct);
+			txtView.setText("");
+			txtView = (TextView) findViewById(R.id.lblProductZVectorProduct);
+			txtView.setText("");
+		}
 	}
 
 	public void onClickDialog(View view) {

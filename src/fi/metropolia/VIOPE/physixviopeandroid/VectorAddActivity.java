@@ -9,7 +9,6 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
-import fi.metropolia.VIOPE.exception.NegativeException;
 import fi.metropolia.VIOPE.exception.ParsingException;
 import fi.metropolia.VIOPE.physixlib.Vector;
 
@@ -28,7 +27,7 @@ public class VectorAddActivity extends Activity {
 		return true;
 	}
 
-	public void calculate(View view) throws NegativeException, ParsingException {
+	public void calculate(View view) throws ParsingException {
 		float x1 = 0, x2 = 0, y1 = 0, y2 = 0, z1 = 0, z2 = 0;
 		try {
 			try {
@@ -39,11 +38,11 @@ public class VectorAddActivity extends Activity {
 				editText = (EditText) findViewById(R.id.txtVectorZVectorAdd1);
 				z1 = Float.parseFloat(editText.getText().toString());
 				editText = (EditText) findViewById(R.id.txtVectorXVectorAdd2);
-				x1 = Float.parseFloat(editText.getText().toString());
+				x2 = Float.parseFloat(editText.getText().toString());
 				editText = (EditText) findViewById(R.id.txtVectorYVectorAdd2);
-				y1 = Float.parseFloat(editText.getText().toString());
+				y2 = Float.parseFloat(editText.getText().toString());
 				editText = (EditText) findViewById(R.id.txtVectorZVectorAdd2);
-				z1 = Float.parseFloat(editText.getText().toString());
+				z2 = Float.parseFloat(editText.getText().toString());
 			} catch (Exception e) {
 				throw new ParsingException(
 						"Please enter inputs in the right form");
