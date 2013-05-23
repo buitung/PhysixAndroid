@@ -175,6 +175,6 @@
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/lblAngleAnsVectorAngle"
         android:layout_toLeftOf="@+id/tgbtnDegRadVectorAngle"
-        android:text="TextView" />
+        android:text="Degree" />
 
 </RelativeLayout>
